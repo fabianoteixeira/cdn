@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang=" en">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name=" viewport" content=" width=device-width, initial-scale=1.0">
+    <title>Tela e-mail</title>
+</head>
+
+<body style=" background: #eaeaea; color: #666; font-size: 14px; font-family: 'Open Sans' , sans-serif; font-weight: 500; margin: 0; height: 100vh; overflow: auto;">
+    <style>
+        @media (max-width: 768px) {
+            .card {
+                height: 780px !important;
+                width: 500px !important;
+                top: calc(50% - 450px) !important;
+                left: calc(50% - 250px) !important;
+            }
+
+            footer {
+                bottom: 20px !important;
+            }
+        }
+
+        @media (max-width: 544px) {
+            .card {
+                position: unset !important;
+                height: 850px !important;
+                width: 100% !important;
+            }
+
+            footer {
+                display: none;
+            }
+        }
+    </style>
+    <div class=" card" style=" position: absolute; top: calc(50% - 27rem); left: calc(50% - 18rem); height: 48.5rem; width: 36rem; z-index: 20; border-radius: 2px; background: white;">
+        <div style=" background: #eaeaea; height: 6rem; display: flex; justify-content: center; padding-bottom: 30px; border: 1px solid #eaeaea; padding-top: 30px;">
+            <img alt=" Logo" src=" UrlImagem">
+        </div>
+        <table class=" table" cellspacing=" 0" cellpadding=" 0"
+               style=" width: 100%;">
+
+            <thead>
+                <tr style=" background-color: #42C3B8; color: white; font-size: 15px;">
+                    <th>
+                        <h2 style=" padding-top: 15px; padding-bottom: 15px;">Cadastrado com sucesso!</h2>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td style=" padding: 40px;">
+                        <div style=" margin-bottom: 50px;">
+                            <span>Olá, NomeUsuarioCadastrado</span>
+                        </div>
+                        <div style=" margin-bottom: 5px;">
+                            <span>Seu cadastro foi efetuado com sucesso.</span>
+                        </div>
+                        <div style=" margin-bottom: 50px;">
+                            <span>Para criar uma senha, clique no botão abaixo:</span>
+                        </div>
+                        <div style=" margin-bottom: 50px;">
+                            <a href=" UrlCriarSenha" style=" box-sizing: border-box; position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; outline: none; border: none; -webkit-tap-highlight-color: transparent; display: inline-block; white-space: nowrap; text-decoration: none; vertical-align: baseline; text-align: center; margin: 0; min-width: 64px; line-height: 36px; padding: 0 16px; border-radius: 4px; overflow: visible; transform: translate3d(0, 0, 0); transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1); background-color: #42C3B8; color: white;">
+                                Criar senha</a>
+                        </div>
+                        <div style=" margin-bottom: 5px;">
+                            <span>Se preferir, copie e cole o link a seguir no seu navegador:</span>
+                        </div>
+                        <div style=" margin-bottom: 50px;">
+                            <span>UrlCriarSenha</span>
+                        </div>
+                        <div style=" margin-bottom: 50px;">
+                            <span>Equipe UpSat</span>
+                        </div>
+                        <div>
+                            <b><span>Atenção: não responda esse e-mail</span></b>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+   
+</body>
+
+</html>";
