@@ -1,0 +1,32 @@
+roOrOneAsteriskCharacter(text)) {
+                            pattern = ts.tryParsePattern(text);
+                        }
+                        else {
+                            errorOnFirstToken(node.name, ts.Diagnostics.Pattern_0_can_have_at_most_one_Asterisk_character, text);
+                        }
+                    }
+                    var symbol = declareSymbolAndAddToSymbolTable(node, 512 /* ValueModule */, 110735 /* ValueModuleExcludes */);
+                    file.patternAmbientModules = ts.append(file.patternAmbientModules, pattern && { pattern: pattern, symbol: symbol });
+                }
+            }
+            else {
+                var state = declareModuleSymbol(node);
+                if (state !== 0 /* NonInstantiated */) {
+                    var symbol = node.symbol;
+                    // if module was already merged with some function, class or non-const enum, treat it as non-const-enum-only
+                    symbol.constEnumOnlyModule = (!(symbol.flags & (16 /* Function */ | 32 /* Class */ | 256 /* RegularEnum */)))
+                        // Current must be `const enum` only
+                        && state === 2 /* ConstEnumOnly */
+                        // Can't have been set to 'false' in a previous merged symbol. ('undefined' OK)
+                        && symbol.constEnumOnlyModule !== false;
+                }
+            }
+        }
+        function declareModuleSymbol(node) {
+            var state = getModuleInstanceState(node);
+            var instantiated = state !== 0 /* NonInstantiated */;
+            declareSymbolAndAddToSymbolTable(node, instantiated ? 512 /* ValueModule */ : 1024 /* NamespaceModule */, instantiated ? 110735 /* ValueModuleExcludes */ : 0 /* NamespaceModuleExcludes */);
+            return state;
+        }
+        function bindFunctionOrConstructorType(node) {
+            // For a given function symbol "<...>(...) => T" we want to generate a symbol identical

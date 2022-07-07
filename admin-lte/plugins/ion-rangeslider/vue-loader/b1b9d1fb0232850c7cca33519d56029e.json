@@ -1,0 +1,50 @@
+parent) // cases 1, 2, and 3
+            || isOptionalChainRoot(node.parent) // case 4
+            || node !== node.parent.expression; // case 5
+    }
+    ts.isOutermostOptionalChain = isOutermostOptionalChain;
+    function isNullishCoalesce(node) {
+        return node.kind === 209 /* BinaryExpression */ && node.operatorToken.kind === 60 /* QuestionQuestionToken */;
+    }
+    ts.isNullishCoalesce = isNullishCoalesce;
+    function isNewExpression(node) {
+        return node.kind === 197 /* NewExpression */;
+    }
+    ts.isNewExpression = isNewExpression;
+    function isTaggedTemplateExpression(node) {
+        return node.kind === 198 /* TaggedTemplateExpression */;
+    }
+    ts.isTaggedTemplateExpression = isTaggedTemplateExpression;
+    function isTypeAssertion(node) {
+        return node.kind === 199 /* TypeAssertionExpression */;
+    }
+    ts.isTypeAssertion = isTypeAssertion;
+    function isConstTypeReference(node) {
+        return isTypeReferenceNode(node) && isIdentifier(node.typeName) &&
+            node.typeName.escapedText === "const" && !node.typeArguments;
+    }
+    ts.isConstTypeReference = isConstTypeReference;
+    function isParenthesizedExpression(node) {
+        return node.kind === 200 /* ParenthesizedExpression */;
+    }
+    ts.isParenthesizedExpression = isParenthesizedExpression;
+    function skipPartiallyEmittedExpressions(node) {
+        return ts.skipOuterExpressions(node, 8 /* PartiallyEmittedExpressions */);
+    }
+    ts.skipPartiallyEmittedExpressions = skipPartiallyEmittedExpressions;
+    function isFunctionExpression(node) {
+        return node.kind === 201 /* FunctionExpression */;
+    }
+    ts.isFunctionExpression = isFunctionExpression;
+    function isArrowFunction(node) {
+        return node.kind === 202 /* ArrowFunction */;
+    }
+    ts.isArrowFunction = isArrowFunction;
+    function isDeleteExpression(node) {
+        return node.kind === 203 /* DeleteExpression */;
+    }
+    ts.isDeleteExpression = isDeleteExpression;
+    function isTypeOfExpression(node) {
+        return node.kind === 204 /* TypeOfExpression */;
+    }
+    ts.isTypeOfExpression = isTypeOfExpress

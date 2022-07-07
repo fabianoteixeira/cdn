@@ -1,0 +1,101 @@
+ot_emit_use_strict_directives_in_module_output
+        },
+        {
+            name: "noEmitHelpers",
+            type: "boolean",
+            affectsEmit: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Do_not_generate_custom_helper_functions_like_extends_in_compiled_output
+        },
+        {
+            name: "noEmitOnError",
+            type: "boolean",
+            affectsEmit: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Do_not_emit_outputs_if_any_errors_were_reported,
+            transpileOptionValue: undefined
+        },
+        {
+            name: "preserveConstEnums",
+            type: "boolean",
+            affectsEmit: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Do_not_erase_const_enum_declarations_in_generated_code
+        },
+        {
+            name: "declarationDir",
+            type: "string",
+            affectsEmit: true,
+            isFilePath: true,
+            paramType: ts.Diagnostics.DIRECTORY,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Output_directory_for_generated_declaration_files,
+            transpileOptionValue: undefined
+        },
+        {
+            name: "skipLibCheck",
+            type: "boolean",
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Skip_type_checking_of_declaration_files,
+        },
+        {
+            name: "allowUnusedLabels",
+            type: "boolean",
+            affectsBindDiagnostics: true,
+            affectsSemanticDiagnostics: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Do_not_report_errors_on_unused_labels
+        },
+        {
+            name: "allowUnreachableCode",
+            type: "boolean",
+            affectsBindDiagnostics: true,
+            affectsSemanticDiagnostics: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Do_not_report_errors_on_unreachable_code
+        },
+        {
+            name: "suppressExcessPropertyErrors",
+            type: "boolean",
+            affectsSemanticDiagnostics: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Suppress_excess_property_checks_for_object_literals,
+        },
+        {
+            name: "suppressImplicitAnyIndexErrors",
+            type: "boolean",
+            affectsSemanticDiagnostics: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Suppress_noImplicitAny_errors_for_indexing_objects_lacking_index_signatures,
+        },
+        {
+            name: "forceConsistentCasingInFileNames",
+            type: "boolean",
+            affectsModuleResolution: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Disallow_inconsistently_cased_references_to_the_same_file
+        },
+        {
+            name: "maxNodeModuleJsDepth",
+            type: "number",
+            affectsModuleResolution: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.The_maximum_dependency_depth_to_search_under_node_modules_and_load_JavaScript_files
+        },
+        {
+            name: "noStrictGenericChecks",
+            type: "boolean",
+            affectsSemanticDiagnostics: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Disable_strict_checking_of_generic_signatures_in_function_types,
+        },
+        {
+            name: "useDefineForClassFields",
+            type: "boolean",
+            affectsSemanticDiagnostics: true,
+            affectsEmit: true,
+            category: ts.Diagnostics.Advanced_Options,
+            description: ts.Diagnostics.Emit_class_fields_with_Define_instead_of_Set,
+        },
+        {
+            name: "ke

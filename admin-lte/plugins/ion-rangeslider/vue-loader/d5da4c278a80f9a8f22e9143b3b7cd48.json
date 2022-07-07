@@ -1,0 +1,75 @@
+ntext*/ true);
+                        break;
+                }
+            }
+            return finishNode(node);
+        }
+        function parseJsxSpreadAttribute() {
+            var node = createNode(275 /* JsxSpreadAttribute */);
+            parseExpected(18 /* OpenBraceToken */);
+            parseExpected(25 /* DotDotDotToken */);
+            node.expression = parseExpression();
+            parseExpected(19 /* CloseBraceToken */);
+            return finishNode(node);
+        }
+        function parseJsxClosingElement(inExpressionContext) {
+            var node = createNode(269 /* JsxClosingElement */);
+            parseExpected(30 /* LessThanSlashToken */);
+            node.tagName = parseJsxElementName();
+            if (inExpressionContext) {
+                parseExpected(31 /* GreaterThanToken */);
+            }
+            else {
+                parseExpected(31 /* GreaterThanToken */, /*diagnostic*/ undefined, /*shouldAdvance*/ false);
+                scanJsxText();
+            }
+            return finishNode(node);
+        }
+        function parseJsxClosingFragment(inExpressionContext) {
+            var node = createNode(272 /* JsxClosingFragment */);
+            parseExpected(30 /* LessThanSlashToken */);
+            if (ts.tokenIsIdentifierOrKeyword(token())) {
+                parseErrorAtRange(parseJsxElementName(), ts.Diagnostics.Expected_corresponding_closing_tag_for_JSX_fragment);
+            }
+            if (inExpressionContext) {
+                parseExpected(31 /* GreaterThanToken */);
+            }
+            else {
+                parseExpected(31 /* GreaterThanToken */, /*diagnostic*/ undefined, /*shouldAdvance*/ false);
+                scanJsxText();
+            }
+            return finishNode(node);
+        }
+        function parseTypeAssertion() {
+            var node = createNode(199 /* TypeAssertionExpression */);
+            parseExpected(29 /* LessThanToken */);
+            node.type = parseType();
+            parseExpected(31 /* GreaterThanToken */);
+            node.expression = parseSimpleUnaryExpression();
+            return finishNode(node);
+        }
+        function nextTokenIsIdentifierOrKeywordOrOpenBracketOrTemplate() {
+            nextToken();
+            return ts.tokenIsIdentifierOrKeyword(token())
+                || token() === 22 /* OpenBracketToken */
+                || isTemplateStartOfTaggedTemplate();
+        }
+        function isStartOfOptionalPropertyOrElementAccessChain() {
+            return token() === 28 /* QuestionDotToken */
+                && lookAhead(nextTokenIsIdentifierOrKeywordOrOpenBracketOrTemplate);
+        }
+        function tryReparseOptionalChain(node) {
+            if (node.flags & 32 /* OptionalChain */) {
+                return true;
+            }
+            // check for an optional chain in a non-null expression
+            if (ts.isNonNullExpression(node)) {
+                var expr = node.expression;
+                while (ts.isNonNullExpression(expr) && !(expr.flags & 32 /* OptionalChain */)) {
+                    expr = expr.expression;
+                }
+                if (expr.flags & 32 /* OptionalChain */) {
+                    // this is part of an optional chain. Walk down from `node` to `expression` and set the flag.
+                    while (ts.isNonNullExpression(node)) {
+                        node.flags |= 32 /* OptionalChain */;
+                       

@@ -1,0 +1,85 @@
+n(node, excludeCompoundAssignment) {
+        return ts.isBinaryExpression(node)
+            && (excludeCompoundAssignment
+                ? node.operatorToken.kind === 62 /* EqualsToken */
+                : isAssignmentOperator(node.operatorToken.kind))
+            && ts.isLeftHandSideExpression(node.left);
+    }
+    ts.isAssignmentExpression = isAssignmentExpression;
+    function isDestructuringAssignment(node) {
+        if (isAssignmentExpression(node, /*excludeCompoundAssignment*/ true)) {
+            var kind = node.left.kind;
+            return kind === 193 /* ObjectLiteralExpression */
+                || kind === 192 /* ArrayLiteralExpression */;
+        }
+        return false;
+    }
+    ts.isDestructuringAssignment = isDestructuringAssignment;
+    function isExpressionWithTypeArgumentsInClassExtendsClause(node) {
+        return tryGetClassExtendingExpressionWithTypeArguments(node) !== undefined;
+    }
+    ts.isExpressionWithTypeArgumentsInClassExtendsClause = isExpressionWithTypeArgumentsInClassExtendsClause;
+    function isEntityNameExpression(node) {
+        return node.kind === 75 /* Identifier */ || isPropertyAccessEntityNameExpression(node);
+    }
+    ts.isEntityNameExpression = isEntityNameExpression;
+    function getFirstIdentifier(node) {
+        switch (node.kind) {
+            case 75 /* Identifier */:
+                return node;
+            case 153 /* QualifiedName */:
+                do {
+                    node = node.left;
+                } while (node.kind !== 75 /* Identifier */);
+                return node;
+            case 194 /* PropertyAccessExpression */:
+                do {
+                    node = node.expression;
+                } while (node.kind !== 75 /* Identifier */);
+                return node;
+        }
+    }
+    ts.getFirstIdentifier = getFirstIdentifier;
+    function isDottedName(node) {
+        return node.kind === 75 /* Identifier */ || node.kind === 104 /* ThisKeyword */ || node.kind === 102 /* SuperKeyword */ ||
+            node.kind === 194 /* PropertyAccessExpression */ && isDottedName(node.expression) ||
+            node.kind === 200 /* ParenthesizedExpression */ && isDottedName(node.expression);
+    }
+    ts.isDottedName = isDottedName;
+    function isPropertyAccessEntityNameExpression(node) {
+        return ts.isPropertyAccessExpression(node) && ts.isIdentifier(node.name) && isEntityNameExpression(node.expression);
+    }
+    ts.isPropertyAccessEntityNameExpression = isPropertyAccessEntityNameExpression;
+    function tryGetPropertyAccessOrIdentifierToString(expr) {
+        if (ts.isPropertyAccessExpression(expr)) {
+            var baseStr = tryGetPropertyAccessOrIdentifierToString(expr.expression);
+            if (baseStr !== undefined) {
+                return baseStr + "." + expr.name;
+            }
+        }
+        else if (ts.isIdentifier(expr)) {
+            return ts.unescapeLeadingUnderscores(expr.escapedText);
+        }
+        return undefined;
+    }
+    ts.tryGetPropertyAccessOrIdentifierToString = tryGetPropertyAccessOrIdentifierToString;
+    function isPrototypeAccess(node) {
+        return isBindableStaticAccessExpression(node) && getElementOrPropertyAccessName(node) === "prototype";
+    }
+    ts.isPrototypeAccess = isPrototypeAccess;
+    function isRightSideOfQualifiedNameOrPropertyAccess(node) {
+        return (node.parent.kind === 153 /* QualifiedName */ && node.parent.right === node) ||
+            (node.parent.kind === 194 /* PropertyAccessExpression */ && node.parent.name === node);
+    }
+    ts.isRightSideOfQualifiedNameOrPropertyAccess = isRightSideOfQualifiedNameOrPropertyAccess;
+    function isEmptyObjectLiteral(expression) {
+        return expression.kind === 193 /* ObjectLiteralExpression */ &&
+            expression.properties.length === 0;
+    }
+    ts.isEmptyObjectLiteral = isEmptyObjectLiteral;
+    function isEmptyArrayLiteral(expression) {
+        return expression.kind === 192 /* ArrayLiteralExpression */ &&
+            expression.elements.length === 0;
+    }
+    ts.isEmptyArrayLiteral = isEmptyArrayLiteral;
+    function g

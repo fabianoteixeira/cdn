@@ -1,0 +1,67 @@
+portKeyword */:
+                    return isStartOfDeclaration();
+                case 126 /* AsyncKeyword */:
+                case 130 /* DeclareKeyword */:
+                case 114 /* InterfaceKeyword */:
+                case 135 /* ModuleKeyword */:
+                case 136 /* NamespaceKeyword */:
+                case 145 /* TypeKeyword */:
+                case 150 /* GlobalKeyword */:
+                    // When these don't start a declaration, they're an identifier in an expression statement
+                    return true;
+                case 119 /* PublicKeyword */:
+                case 117 /* PrivateKeyword */:
+                case 118 /* ProtectedKeyword */:
+                case 120 /* StaticKeyword */:
+                case 138 /* ReadonlyKeyword */:
+                    // When these don't start a declaration, they may be the start of a class member if an identifier
+                    // immediately follows. Otherwise they're an identifier in an expression statement.
+                    return isStartOfDeclaration() || !lookAhead(nextTokenIsIdentifierOrKeywordOnSameLine);
+                default:
+                    return isStartOfExpression();
+            }
+        }
+        function nextTokenIsIdentifierOrStartOfDestructuring() {
+            nextToken();
+            return isIdentifier() || token() === 18 /* OpenBraceToken */ || token() === 22 /* OpenBracketToken */;
+        }
+        function isLetDeclaration() {
+            // In ES6 'let' always starts a lexical declaration if followed by an identifier or {
+            // or [.
+            return lookAhead(nextTokenIsIdentifierOrStartOfDestructuring);
+        }
+        function parseStatement() {
+            switch (token()) {
+                case 26 /* SemicolonToken */:
+                    return parseEmptyStatement();
+                case 18 /* OpenBraceToken */:
+                    return parseBlock(/*ignoreMissingOpenBrace*/ false);
+                case 109 /* VarKeyword */:
+                    return parseVariableStatement(createNodeWithJSDoc(242 /* VariableDeclaration */));
+                case 115 /* LetKeyword */:
+                    if (isLetDeclaration()) {
+                        return parseVariableStatement(createNodeWithJSDoc(242 /* VariableDeclaration */));
+                    }
+                    break;
+                case 94 /* FunctionKeyword */:
+                    return parseFunctionDeclaration(createNodeWithJSDoc(244 /* FunctionDeclaration */));
+                case 80 /* ClassKeyword */:
+                    return parseClassDeclaration(createNodeWithJSDoc(245 /* ClassDeclaration */));
+                case 95 /* IfKeyword */:
+                    return parseIfStatement();
+                case 86 /* DoKeyword */:
+                    return parseDoStatement();
+                case 111 /* WhileKeyword */:
+                    return parseWhileStatement();
+                case 93 /* ForKeyword */:
+                    return parseForOrForInOrForOfStatement();
+                case 82 /* ContinueKeyword */:
+                    return parseBreakOrContinueStatement(233 /* ContinueStatement */);
+                case 77 /* BreakKeyword */:
+                    return parseBreakOrContinueStatement(234 /* BreakStatement */);
+                case 101 /* ReturnKeyword */:
+                    return parseReturnStatement();
+                case 112 /* WithKeyword */:
+                    return parseWithStatement();
+                case 103 /* SwitchKeyword */:
+                    return p

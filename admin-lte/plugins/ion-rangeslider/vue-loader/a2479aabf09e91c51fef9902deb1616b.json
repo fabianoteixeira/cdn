@@ -1,0 +1,28 @@
+nction pollPollingIntervalQueue(queue) {
+            queue.pollIndex = pollQueue(queue, queue.pollingInterval, queue.pollIndex, pollingChunkSize[queue.pollingInterval]);
+            // Set the next polling index and timeout
+            if (queue.length) {
+                scheduleNextPoll(queue.pollingInterval);
+            }
+            else {
+                ts.Debug.assert(queue.pollIndex === 0);
+                queue.pollScheduled = false;
+            }
+        }
+        function pollLowPollingIntervalQueue(queue) {
+            // Always poll complete list of changedFilesInLastPoll
+            pollQueue(changedFilesInLastPoll, PollingInterval.Low, /*pollIndex*/ 0, changedFilesInLastPoll.length);
+            // Finally do the actual polling of the queue
+            pollPollingIntervalQueue(queue);
+            // Schedule poll if there are files in changedFilesInLastPoll but no files in the actual queue
+            // as pollPollingIntervalQueue wont schedule for next poll
+            if (!queue.pollScheduled && changedFilesInLastPoll.length) {
+                scheduleNextPoll(PollingInterval.Low);
+            }
+        }
+        function pollQueue(queue, pollingInterval, pollIndex, chunkSize) {
+            // Max visit would be all elements of the queue
+            var needsVisit = queue.length;
+            var definedValueCopyToIndex = pollIndex;
+            for (var polled = 0; polled < chunkSize && needsVisit > 0; nextPollIndex(), needsVisit--) {
+                var

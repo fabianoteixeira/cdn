@@ -1,0 +1,32 @@
+ons, onlyRecordFailures, state);
+        }
+        // First, try adding an extension. An import of "foo" could be matched by a file "foo.ts", or "foo.js" by "foo.js.ts"
+        var resolvedByAddingExtension = tryAddingExtensions(candidate, extensions, onlyRecordFailures, state);
+        if (resolvedByAddingExtension) {
+            return resolvedByAddingExtension;
+        }
+        // If that didn't work, try stripping a ".js" or ".jsx" extension and replacing it with a TypeScript one;
+        // e.g. "./foo.js" can be matched by "./foo.ts" or "./foo.d.ts"
+        if (ts.hasJSFileExtension(candidate)) {
+            var extensionless = ts.removeFileExtension(candidate);
+            if (state.traceEnabled) {
+                var extension = candidate.substring(extensionless.length);
+                trace(state.host, ts.Diagnostics.File_name_0_has_a_1_extension_stripping_it, candidate, extension);
+            }
+            return tryAddingExtensions(extensionless, extensions, onlyRecordFailures, state);
+        }
+    }
+    /** Try to return an existing file that adds one of the `extensions` to `candidate`. */
+    function tryAddingExtensions(candidate, extensions, onlyRecordFailures, state) {
+        if (!onlyRecordFailures) {
+            // check if containing folder exists - if it doesn't then just record failures for all supported extensions without disk probing
+            var directory = ts.getDirectoryPath(candidate);
+            if (directory) {
+                onlyRecordFailures = !ts.directoryProbablyExists(directory, state.host);
+            }
+        }
+        switch (extensions) {
+            case Extensions.DtsOnly:
+                return tryExtension(".d.ts" /* Dts */);
+            case Extensions.TypeScript:
+                return tryExtension(".ts" /* Ts */) || tryExtension(".tsx" /* Tsx */

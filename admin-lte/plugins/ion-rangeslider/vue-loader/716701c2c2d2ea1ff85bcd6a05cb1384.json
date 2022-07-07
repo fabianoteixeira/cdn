@@ -1,0 +1,19 @@
+faultImports: true, skipLibCheck: true, noEmit: true }
+            : {};
+        return options;
+    }
+    function convertCompilerOptionsFromJsonWorker(jsonOptions, basePath, errors, configFileName) {
+        var options = getDefaultCompilerOptions(configFileName);
+        convertOptionsFromJson(getCommandLineCompilerOptionsMap(), jsonOptions, basePath, options, ts.compilerOptionsDidYouMeanDiagnostics, errors);
+        if (configFileName) {
+            options.configFilePath = ts.normalizeSlashes(configFileName);
+        }
+        return options;
+    }
+    function getDefaultTypeAcquisition(configFileName) {
+        return { enable: !!configFileName && ts.getBaseFileName(configFileName) === "jsconfig.json", include: [], exclude: [] };
+    }
+    function convertTypeAcquisitionFromJsonWorker(jsonOptions, basePath, errors, configFileName) {
+        var options = getDefaultTypeAcquisition(configFileName);
+        var typeAcquisition = convertEnableAutoDiscoveryToEnable(jsonOptions);
+        convertOptionsFromJson(getCommandLineTypeAcquisitionMap(), typeAcquisition, basePath, 

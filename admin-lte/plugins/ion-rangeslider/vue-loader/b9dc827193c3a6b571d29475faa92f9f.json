@@ -1,0 +1,55 @@
+      return ts.isModuleDeclaration(node) && ts.isStringLiteral(node.name);
+    }
+    ts.isNonGlobalAmbientModule = isNonGlobalAmbientModule;
+    /**
+     * An effective module (namespace) declaration is either
+     * 1. An actual declaration: namespace X { ... }
+     * 2. A Javascript declaration, which is:
+     *    An identifier in a nested property access expression: Y in `X.Y.Z = { ... }`
+     */
+    function isEffectiveModuleDeclaration(node) {
+        return ts.isModuleDeclaration(node) || ts.isIdentifier(node);
+    }
+    ts.isEffectiveModuleDeclaration = isEffectiveModuleDeclaration;
+    /** Given a symbol for a module, checks that it is a shorthand ambient module. */
+    function isShorthandAmbientModuleSymbol(moduleSymbol) {
+        return isShorthandAmbientModule(moduleSymbol.valueDeclaration);
+    }
+    ts.isShorthandAmbientModuleSymbol = isShorthandAmbientModuleSymbol;
+    function isShorthandAmbientModule(node) {
+        // The only kind of module that can be missing a body is a shorthand ambient module.
+        return node && node.kind === 249 /* ModuleDeclaration */ && (!node.body);
+    }
+    function isBlockScopedContainerTopLevel(node) {
+        return node.kind === 290 /* SourceFile */ ||
+            node.kind === 249 /* ModuleDeclaration */ ||
+            ts.isFunctionLike(node);
+    }
+    ts.isBlockScopedContainerTopLevel = isBlockScopedContainerTopLevel;
+    function isGlobalScopeAugmentation(module) {
+        return !!(module.flags & 1024 /* GlobalAugmentation */);
+    }
+    ts.isGlobalScopeAugmentation = isGlobalScopeAugmentation;
+    function isExternalModuleAugmentation(node) {
+        return isAmbientModule(node) && isModuleAugmentationExternal(node);
+    }
+    ts.isExternalModuleAugmentation = isExternalModuleAugmentation;
+    function isModuleAugmentationExternal(node) {
+        // external module augmentation is a ambient module declaration that is either:
+        // - defined in the top level scope and source file is an external module
+        // - defined inside ambient module declaration located in the top level scope and source file not an external module
+        switch (node.parent.kind) {
+            case 290 /* SourceFile */:
+                return ts.isExternalModule(node.parent);
+            case 250 /* ModuleBlock */:
+                return isAmbientModule(node.parent.parent) && ts.isSourceFile(node.parent.parent.parent) && !ts.isExternalModule(node.parent.parent.parent);
+        }
+        return false;
+    }
+    ts.isModuleAugmentationExternal = isModuleAugmentationExternal;
+    function getNonAugmentationDeclaration(symbol) {
+        return ts.find(symbol.declarations, function (d) { return !isExternalModuleAugmentation(d) && !(ts.isModuleDeclaration(d) && isGlobalScopeAugmentation(d)); });
+    }
+    ts.getNonAugmentationDeclaration = getNonAugmentationDeclaration;
+    function isEffectiveExternalModule(node, compilerOptions) {
+        return ts.isExternalModule(node) || compilerOptions.isolatedModules || ((getEmitModuleKind(compilerOptions) === ts.Mo

@@ -1,0 +1,29 @@
+lly_in_strict_mode;
+            }
+            return ts.Diagnostics.Invalid_use_of_0_in_strict_mode;
+        }
+        function checkStrictModeFunctionName(node) {
+            if (inStrictMode) {
+                // It is a SyntaxError if the identifier eval or arguments appears within a FormalParameterList of a strict mode FunctionDeclaration or FunctionExpression (13.1))
+                checkStrictModeEvalOrArguments(node, node.name);
+            }
+        }
+        function getStrictModeBlockScopeFunctionDeclarationMessage(node) {
+            // Provide specialized messages to help the user understand why we think they're in
+            // strict mode.
+            if (ts.getContainingClass(node)) {
+                return ts.Diagnostics.Function_declarations_are_not_allowed_inside_blocks_in_strict_mode_when_targeting_ES3_or_ES5_Class_definitions_are_automatically_in_strict_mode;
+            }
+            if (file.externalModuleIndicator) {
+                return ts.Diagnostics.Function_declarations_are_not_allowed_inside_blocks_in_strict_mode_when_targeting_ES3_or_ES5_Modules_are_automatically_in_strict_mode;
+            }
+            return ts.Diagnostics.Function_declarations_are_not_allowed_inside_blocks_in_strict_mode_when_targeting_ES3_or_ES5;
+        }
+        function checkStrictModeFunctionDeclaration(node) {
+            if (languageVersion < 2 /* ES2015 */) {
+                // Report error if function is not top level function declaration
+                if (blockScopeContainer.kind !== 290 /* SourceFile */ &&
+                    blockScopeContainer.kind !== 249 /* ModuleDeclaration */ &&
+                    !ts.isFunctionLike(blockScopeContainer)) {
+                    // We check first if the name is inside class declaration or class expression; if so give explicit message
+  

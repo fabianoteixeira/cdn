@@ -1,0 +1,51 @@
+= ts.getExtensionPriority(file, extensions);
+        var adjustedExtensionPriority = ts.adjustExtensionPriority(extensionPriority, extensions);
+        for (var i = 0 /* Highest */; i < adjustedExtensionPriority; i++) {
+            var higherPriorityExtension = extensions[i];
+            var higherPriorityPath = keyMapper(ts.changeExtension(file, higherPriorityExtension));
+            if (literalFiles.has(higherPriorityPath) || wildcardFiles.has(higherPriorityPath)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     * Removes files included via wildcard expansion with a lower extension priority that have
+     * already been included.
+     *
+     * @param file The path to the file.
+     * @param extensionPriority The priority of the extension.
+     * @param context The expansion context.
+     */
+    function removeWildcardFilesWithLowerPriorityExtension(file, wildcardFiles, extensions, keyMapper) {
+        var extensionPriority = ts.getExtensionPriority(file, extensions);
+        var nextExtensionPriority = ts.getNextLowestExtensionPriority(extensionPriority, extensions);
+        for (var i = nextExtensionPriority; i < extensions.length; i++) {
+            var lowerPriorityExtension = extensions[i];
+            var lowerPriorityPath = keyMapper(ts.changeExtension(file, lowerPriorityExtension));
+            wildcardFiles.delete(lowerPriorityPath);
+        }
+    }
+    /**
+     * Produces a cleaned version of compiler options with personally identifying info (aka, paths) removed.
+     * Also converts enum values back to strings.
+     */
+    /* @internal */
+    function convertCompilerOptionsForTelemetry(opts) {
+        var out = {};
+        for (var key in opts) {
+            if (opts.hasOwnProperty(key)) {
+                var type = getOptionFromName(key);
+                if (type !== undefined) { // Ignore unknown options
+                    out[key] = getOptionValueWithEmptyStrings(opts[key], type);
+                }
+            }
+        }
+        return out;
+    }
+    ts.convertCompilerOptionsForTelemetry = convertCompilerOptionsForTelemetry;
+    function getOptionValueWithEmptyStrings(value, option) {
+        switch (option.type) {
+            case "object": // "paths". Can't get any useful information from the value since we blank out strings, so just return "".
+                return "";
+            case "string": // Could be any arbitrary strin

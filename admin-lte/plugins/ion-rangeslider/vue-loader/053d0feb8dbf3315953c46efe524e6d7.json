@@ -1,0 +1,36 @@
+Set = context & ~contextFlags;
+            if (contextFlagsToSet) {
+                // set the requested context flags
+                setContextFlag(/*val*/ true, contextFlagsToSet);
+                var result = func();
+                // reset the context flags we just set
+                setContextFlag(/*val*/ false, contextFlagsToSet);
+                return result;
+            }
+            // no need to do anything special as we are already in all of the requested contexts
+            return func();
+        }
+        function allowInAnd(func) {
+            return doOutsideOfContext(4096 /* DisallowInContext */, func);
+        }
+        function disallowInAnd(func) {
+            return doInsideOfContext(4096 /* DisallowInContext */, func);
+        }
+        function doInYieldContext(func) {
+            return doInsideOfContext(8192 /* YieldContext */, func);
+        }
+        function doInDecoratorContext(func) {
+            return doInsideOfContext(16384 /* DecoratorContext */, func);
+        }
+        function doInAwaitContext(func) {
+            return doInsideOfContext(32768 /* AwaitContext */, func);
+        }
+        function doOutsideOfAwaitContext(func) {
+            return doOutsideOfContext(32768 /* AwaitContext */, func);
+        }
+        function doInYieldAndAwaitContext(func) {
+            return doInsideOfContext(8192 /* YieldContext */ | 32768 /* AwaitContext */, func);
+        }
+        function doOutsideOfYieldAndAwaitContext(func) {
+            return doOutsideOfContext(8192 /* YieldContext */ | 32768 /* AwaitContext */, func);
+     

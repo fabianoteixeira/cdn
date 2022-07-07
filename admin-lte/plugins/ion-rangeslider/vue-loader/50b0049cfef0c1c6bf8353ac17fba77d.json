@@ -1,0 +1,25 @@
+leKind.UseFsEvents:
+                    return fsWatch(fileName, 0 /* File */, createFsWatchCallbackForFileWatcherCallback(fileName, callback, fileExists), 
+                    /*recursive*/ false, pollingInterval, ts.getFallbackOptions(options));
+                case ts.WatchFileKind.UseFsEventsOnParentDirectory:
+                    if (!nonPollingWatchFile) {
+                        nonPollingWatchFile = createUseFsEventsOnParentDirectoryWatchFile(fsWatch, useCaseSensitiveFileNames);
+                    }
+                    return nonPollingWatchFile(fileName, callback, pollingInterval, ts.getFallbackOptions(options));
+                default:
+                    ts.Debug.assertNever(watchFileKind);
+            }
+        }
+        function ensureDynamicPollingWatchFile() {
+            return dynamicPollingWatchFile ||
+                (dynamicPollingWatchFile = createDynamicPriorityPollingWatchFile({ getModifiedTime: getModifiedTime, setTimeout: setTimeout }));
+        }
+        function updateOptionsForWatchFile(options, useNonPollingWatchers) {
+            if (options && options.watchFile !== undefined)
+                return options;
+            switch (tscWatchFile) {
+                case "PriorityPollingInterval":
+                    // Use polling interval based on priority when create watch using host.watchFile
+                    return { watchFile: ts.WatchFileKind.PriorityPollingInterval };
+                case "DynamicPriorityPolling":
+                    // Use polling interval but change the interval depending on file changes and 

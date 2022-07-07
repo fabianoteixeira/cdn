@@ -1,0 +1,25 @@
+nd["GeneratorYield"] = 3] = "GeneratorYield";
+    })(WideningKind || (WideningKind = {}));
+    var TypeFacts;
+    (function (TypeFacts) {
+        TypeFacts[TypeFacts["None"] = 0] = "None";
+        TypeFacts[TypeFacts["TypeofEQString"] = 1] = "TypeofEQString";
+        TypeFacts[TypeFacts["TypeofEQNumber"] = 2] = "TypeofEQNumber";
+        TypeFacts[TypeFacts["TypeofEQBigInt"] = 4] = "TypeofEQBigInt";
+        TypeFacts[TypeFacts["TypeofEQBoolean"] = 8] = "TypeofEQBoolean";
+        TypeFacts[TypeFacts["TypeofEQSymbol"] = 16] = "TypeofEQSymbol";
+        TypeFacts[TypeFacts["TypeofEQObject"] = 32] = "TypeofEQObject";
+        TypeFacts[TypeFacts["TypeofEQFunction"] = 64] = "TypeofEQFunction";
+        TypeFacts[TypeFacts["TypeofEQHostObject"] = 128] = "TypeofEQHostObject";
+        TypeFacts[TypeFacts["TypeofNEString"] = 256] = "TypeofNEString";
+        TypeFacts[TypeFacts["TypeofNENumber"] = 512] = "TypeofNENumber";
+        TypeFacts[TypeFacts["TypeofNEBigInt"] = 1024] = "TypeofNEBigInt";
+        TypeFacts[TypeFacts["TypeofNEBoolean"] = 2048] = "TypeofNEBoolean";
+        TypeFacts[TypeFacts["TypeofNESymbol"] = 4096] = "TypeofNESymbol";
+        TypeFacts[TypeFacts["TypeofNEObject"] = 8192] = "TypeofNEObject";
+        TypeFacts[TypeFacts["TypeofNEFunction"] = 16384] = "TypeofNEFunction";
+        TypeFacts[TypeFacts["TypeofNEHostObject"] = 32768] = "TypeofNEHostObject";
+        TypeFacts[TypeFacts["EQUndefined"] = 65536] = "EQUndefined";
+        TypeFacts[TypeFacts["EQNull"] = 131072] = "EQNull";
+        TypeFacts[TypeFacts["EQUndefinedOrNull"] = 262144] = "EQUndefinedOrNull";
+        TypeFacts[TypeFacts["N

@@ -1,0 +1,1458 @@
+  },
+            "Microsoft.DotNet.GenAPI": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-beta.20316.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20353.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Net.Compilers.Toolset": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.7.0-4.20319.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.AzureRepos.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "NETStandard.Library.Ref",
+              "version": "[2.1.0, 2.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Core\\src\\Microsoft.Extensions.Identity.Core.csproj": {
+      "version": "5.0.0-dev",
+      "restore": {
+        "projectUniqueName": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Core\\src\\Microsoft.Extensions.Identity.Core.csproj",
+        "projectName": "Microsoft.Extensions.Identity.Core",
+        "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Core\\src\\Microsoft.Extensions.Identity.Core.csproj",
+        "packagesPath": "C:\\Users\\Fabiano\\.nuget\\packages\\",
+        "outputPath": "E:\\Projetos Visual Studio\\aspnetcore\\artifacts\\obj\\Microsoft.Extensions.Identity.Core\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "E:\\Projetos Visual Studio\\aspnetcore\\NuGet.Config",
+          "C:\\Users\\Fabiano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/darc-pub-dotnet-blazor-cc449601/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-transport/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5-transport/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "E:\\Projetos Visual Studio\\aspnetcore\\src\\Analyzers\\Internal.AspNetCore.Analyzers\\src\\Internal.AspNetCore.Analyzers.csproj": {
+                "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Analyzers\\Internal.AspNetCore.Analyzers\\src\\Internal.AspNetCore.Analyzers.csproj",
+                "privateAssets": "all"
+              },
+              "E:\\Projetos Visual Studio\\aspnetcore\\src\\DataProtection\\Cryptography.KeyDerivation\\src\\Microsoft.AspNetCore.Cryptography.KeyDerivation.csproj": {
+                "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\DataProtection\\Cryptography.KeyDerivation\\src\\Microsoft.AspNetCore.Cryptography.KeyDerivation.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "projectReferences": {
+              "E:\\Projetos Visual Studio\\aspnetcore\\src\\Analyzers\\Internal.AspNetCore.Analyzers\\src\\Internal.AspNetCore.Analyzers.csproj": {
+                "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Analyzers\\Internal.AspNetCore.Analyzers\\src\\Internal.AspNetCore.Analyzers.csproj",
+                "privateAssets": "all"
+              },
+              "E:\\Projetos Visual Studio\\aspnetcore\\src\\DataProtection\\Cryptography.KeyDerivation\\src\\Microsoft.AspNetCore.Cryptography.KeyDerivation.csproj": {
+                "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\DataProtection\\Cryptography.KeyDerivation\\src\\Microsoft.AspNetCore.Cryptography.KeyDerivation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU5105"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "dependencies": {
+            "Internal.AspNetCore.BuildTasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-build-20190530.3, )",
+              "autoReferenced": true
+            },
+            "MicroBuild.Core": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
+            "Microsoft.DotNet.GenAPI": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-beta.20316.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Internal.Transport": {
+              "include": "Compile",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Net.Compilers.Toolset": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.7.0-4.20319.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.AzureRepos.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0-preview.8.20352.6, 5.0.0-preview.8.20352.6]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0-preview.6.20308.1, 5.0.0-preview.6.20308.1]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "dependencies": {
+            "Internal.AspNetCore.BuildTasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-build-20190530.3, )",
+              "autoReferenced": true
+            },
+            "MicroBuild.Core": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
+            "Microsoft.DotNet.GenAPI": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-beta.20316.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Net.Compilers.Toolset": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.7.0-4.20319.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.AzureRepos.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Stores\\src\\Microsoft.Extensions.Identity.Stores.csproj": {
+      "version": "5.0.0-dev",
+      "restore": {
+        "projectUniqueName": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Stores\\src\\Microsoft.Extensions.Identity.Stores.csproj",
+        "projectName": "Microsoft.Extensions.Identity.Stores",
+        "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Stores\\src\\Microsoft.Extensions.Identity.Stores.csproj",
+        "packagesPath": "C:\\Users\\Fabiano\\.nuget\\packages\\",
+        "outputPath": "E:\\Projetos Visual Studio\\aspnetcore\\artifacts\\obj\\Microsoft.Extensions.Identity.Stores\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "E:\\Projetos Visual Studio\\aspnetcore\\NuGet.Config",
+          "C:\\Users\\Fabiano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/darc-pub-dotnet-blazor-cc449601/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-transport/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5-transport/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "E:\\Projetos Visual Studio\\aspnetcore\\src\\Analyzers\\Internal.AspNetCore.Analyzers\\src\\Internal.AspNetCore.Analyzers.csproj": {
+                "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Analyzers\\Internal.AspNetCore.Analyzers\\src\\Internal.AspNetCore.Analyzers.csproj",
+                "privateAssets": "all"
+              },
+              "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Core\\src\\Microsoft.Extensions.Identity.Core.csproj": {
+                "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Core\\src\\Microsoft.Extensions.Identity.Core.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "projectReferences": {
+              "E:\\Projetos Visual Studio\\aspnetcore\\src\\Analyzers\\Internal.AspNetCore.Analyzers\\src\\Internal.AspNetCore.Analyzers.csproj": {
+                "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Analyzers\\Internal.AspNetCore.Analyzers\\src\\Internal.AspNetCore.Analyzers.csproj",
+                "privateAssets": "all"
+              },
+              "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Core\\src\\Microsoft.Extensions.Identity.Core.csproj": {
+                "projectPath": "E:\\Projetos Visual Studio\\aspnetcore\\src\\Identity\\Extensions.Core\\src\\Microsoft.Extensions.Identity.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU5105"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "dependencies": {
+            "Internal.AspNetCore.BuildTasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-build-20190530.3, )",
+              "autoReferenced": true
+            },
+            "MicroBuild.Core": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
+            "Microsoft.DotNet.GenAPI": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-beta.20316.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Internal.Transport": {
+              "include": "Compile",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Net.Compilers.Toolset": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.7.0-4.20319.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.AzureRepos.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0-preview.8.20352.6, 5.0.0-preview.8.20352.6]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0-preview.6.20308.1, 5.0.0-preview.6.20308.1]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "dependencies": {
+            "Internal.AspNetCore.BuildTasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-build-20190530.3, )",
+              "autoReferenced": true
+            },
+            "MicroBuild.Core": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
+            "Microsoft.DotNet.GenAPI": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-beta.20316.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0-preview.8.20352.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Net.Compilers.Toolset": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.7.0-4.20319.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.AzureRepos.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20206-02, )",
+              "autoReferenced": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              PKGA
+   ﬂ£œBÎ”TgæP∞z·=S˛éqgü¥hA™ZqÅ          [   UC:\Users\Fabiano\.nuget\packages\messagepack\2.1.90\lib\netcoreapp2.1\MessagePack.dll                      nC:\Users\Fabiano\.nuget\packages\messagepack.annotations\2.1.90\lib\netstandard2.0\MessagePack.Annotations.dll                      yC:\Users\Fabiano\.nuget\packages\microsoft.bcl.asyncinterfaces\1.0.0\ref\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll             	      
+   ªC:\Users\Fabiano\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0-preview.8.20352.6\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll                      ØC:\Users\Fabiano\.nuget\packages\microsoft.extensions.fileproviders.abstractions\5.0.0-preview.8.20352.6\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll                      ôC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Caching.Abstractions.dll                      ìC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Caching.Memory.dll                      üC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll                      ôC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.Binder.dll                      ûC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.CommandLine.dll                      ßC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll                      °C:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.FileExtensions.dll                      ñC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.Ini.dll                      óC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.Json.dll                      ûC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.UserSecrets.dll                      ñC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.Xml.dll                      íC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Configuration.dll                      •C:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll                      òC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.DependencyInjection.dll                      îC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.DependencyModel.dll                      üC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll                       úC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.FileProviders.Composite.dll                   !   õC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.FileProviders.Physical.dll                   "   óC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll                   #   ôC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Hosting.Abstractions.dll                   $   åC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Hosting.dll                   %   âC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Http.dll                   &   ôC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Logging.Abstractions.dll                   '   öC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Logging.Configuration.dll                   (   îC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Logging.Console.dll                   )   íC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Logging.Debug.dll                   *   ïC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Logging.EventLog.dll                   +   òC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Logging.EventSource.dll                   ,   òC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Logging.TraceSource.dll                   -   åC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Logging.dll                   .   §C:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll                   /   úC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Options.DataAnnotations.dll                   0   åC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Options.dll                   1   èC:\Users\Fabiano\.nuget\packages\microsoft.extensions.internal.transport\5.0.0-preview.8.20352.6\ref\net5.0\Microsoft.Extensions.Primitives.dll                   2   £C:\Users\Fabiano\.nuget\packages\microsoft.extensions.logging.abstractions\5.0.0-preview.8.20352.6\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll       3            4   ÅC:\Users\Fabiano\.nuget\packages\microsoft.extensions.options\5.0.0-preview.8.20352.6\lib\net5.0\Microsoft.Extensions.Options.dll       5            6   éC:\Users\Fabiano\.nuget\packages\microsoft.extensions.primitives\5.0.0-preview.8.20352.6\lib\netcoreapp3.0\Microsoft.Extensions.Primitives.dll       7            8   sC:\Users\Fabiano\.nuget\packages\microsoft.win32.primitives\4.3.0\ref\netstandard1.3\Microsoft.Win32.Primitives.dll       9      :      ;   ^C:\Users\Fabiano\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll       <      =      >   aC:\Users\Fabiano\.nuget\packages\system.appcontext\4.3.0\ref\netstandard1.6\System.AppContext.dll       ?      :      @   cC:\Users\Fabiano\.nuget\packages\system.collections\4.3.0\ref\netstandard1.3\System.Collections.dll       A      :      B   yC:\Users\Fabiano\.nuget\packages\system.collections.concurrent\4.3.0\ref\netstandard1.3\System.Collections.Concurrent.dll       C      :      D   [C:\Users\Fabiano\.nuget\packages\system.console\4.3.0\ref\netstandard1.3\System.Console.dll       E      :      F   oC:\Users\Fabiano\.nuget\packages\system.diagnostics.debug\4.3.0\ref\netstandard1.3\System.Diagnostics.Debug.dll       G      :      H   oC:\Users\Fabiano\.nuget\packages\system.diagnostics.tools\4.3.0\ref\netstandard1.0\System.Diagnostics.Tools.dll       I      :      J   sC:\Users\Fabiano\.nuget\packages\system.diagnostics.tracing\4.3.0\ref\netstandard1.5\System.Diagnostics.Tracing.dll       K      :      L   gC:\Users\Fabiano\.nuget\packages\system.globalization\4.3.0\ref\netstandard1.3\System.Globalization.dll       M      :      N   {C:\Users\Fabiano\.nuget\packages\system.globalization.calendars\4.3.0\ref\netstandard1.3\System.Globalization.Calendars.dll       O      :      P   QC:\Users\Fabiano\.nuget\packages\system.io\4.3.0\ref\netstandard1.5\System.IO.dll       Q      :      R   iC:\Users\Fabiano\.nuget\packages\system.io.compression\4.3.0\ref\netstandard1.3\System.IO.Compression.dll       S      :      T   yC:\Users\Fabiano\.nuget\packages\system.io.compression.zipfile\4.3.0\ref\netstandard1.3\System.IO.Compression.ZipFile.dll       U      :      V   gC:\Users\Fabiano\.nuget\packages\system.io.filesystem\4.3.0\ref\netstandard1.3\System.IO.FileSystem.dll       W      :      X   }C:\Users\Fabiano\.nuget\packages\system.io.filesystem.primitives\4.3.0\ref\netstandard1.3\System.IO.FileSystem.Primitives.dll       Y      :      Z   vC:\Users\Fabiano\.nuget\packages\system.io.pipelines\5.0.0-preview.8.20352.6\ref\netcoreapp2.0\System.IO.Pipelines.dll       [            \   UC:\Users\Fabiano\.nuget\packages\system.linq\4.3.0\ref\netstandard1.6\System.Linq.dll       ]      :      ^   mC:\Users\Fabiano\.nuget\packages\system.linq.expressions\4.3.0\ref\netstandard1.6\System.Linq.Expressions.dll       _      :      `   ]C:\Users\Fabiano\.nuget\packages\system.net.http\4.3.0\ref\netstandard1.3\System.Net.Http.dll       a      :      b   iC:\Users\Fabiano\.nuget\packages\system.net.primitives\4.3.0\ref\netstandard1.3\System.Net.Primitives.dll       c      :      d   cC:\Users\Fabiano\.nuget\packages\system.net.sockets\4.3.0\ref\netstandard1.3\System.Net.Sockets.dll       e      :      f   cC:\Users\Fabiano\.nuget\packages\system.objectmodel\4.3.0\ref\netstandard1.3\System.ObjectModel.dll       g      :      h   aC:\Users\Fabiano\.nuget\packages\system.reflection\4.3.0\ref\netstandard1.5\System.Reflection.dll       i      :      j   wC:\Users\Fabiano\.nuget\packages\system.reflection.extensions\4.3.0\ref\netstandard1.0\System.Reflection.Extensions.dll       k      :      l   wC:\Users\Fabiano\.nuget\packages\system.reflection.primitives\4.3.0\ref\netstandard1.0\System.Reflection.Primitives.dll       m      :      n   C:\Users\Fabiano\.nuget\packages\system.resources.resourcemanager\4.3.0\ref\netstandard1.0\System.Resources.ResourceManager.dll       o      :      p   [C:\Users\Fabiano\.nuget\packages\system.runtime\4.3.0\ref\netstandard1.5\System.Runtime.dll       q      :      r   ãC:\Users\Fabiano\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll       s      t      u   qC:\Users\Fabiano\.nuget\packages\system.runtime.extensions\4.3.0\ref\netstandard1.5\System.Runtime.Extensions.dll       v      :      w   kC:\Users\Fabiano\.nuget\packages\system.runtime.handles\4.3.0\ref\netstandard1.3\System.Runtime.Handles.dll       x      :      y   zC:\Users\Fabiano\.nuget\packages\system.runtime.interopservices\4.3.0\ref\netcoreapp1.1\System.Runtime.InteropServices.dll       z      :      {   °C:\Users\Fabiano\.nuget\packages\system.runtime.interopservices.runtimeinformation\4.3.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll       |      :      }   mC:\Users\Fabiano\.nuget\packages\system.runtime.numerics\4.3.0\ref\netstandard1.1\System.Runtime.Numerics.dll       ~      :         çC:\Users\Fabiano\.nuget\packages\system.security.cryptography.algorithms\4.3.0\ref\netstandard1.6\System.Security.Cryptography.Algorithms.dll       Ä      :      Å   âC:\Users\Fabiano\.nuget\packages\system.security.cryptography.encoding\4.3.0\ref\netstandard1.3\System.Security.Cryptography.Encoding.dll       Ç      :      É   çC:\Users\Fabiano\.nuget\packages\system.security.cryptography.primitives\4.3.0\ref\netstandard1.3\System.Security.Cryptography.Primitives.dll       Ñ      :      Ö   ôC:\Users\Fabiano\.nuget\packages\system.security.cryptography.x509certificates\4.3.0\ref\netstandard1.4\System.Security.Cryptography.X509Certificates.dll       Ü      :      á   gC:\Users\Fabiano\.nuget\packages\system.text.encoding\4.3.0\ref\netstandard1.3\System.Text.Encoding.dll       à      :      â   }C:\Users\Fabiano\.nuget\packages\system.text.encoding.extensions\4.3.0\ref\netstandard1.3\System.Text.Encoding.Extensions.dll       ä      :      ã   zC:\Users\Fabiano\.nuget\packages\system.text.regularexpressions\4.3.0\ref\netcoreapp1.1\System.Text.RegularExpressions.dll       å      :      ç   _C:\Users\Fabiano\.nuget\packages\system.threading\4.3.0\ref\netstandard1.3\System.Threading.dll       é      :      è   kC:\Users\Fabiano\.nuget\packages\system.threading.tasks\4.3.0\ref\netstandard1.3\System.Threading.Tasks.dll       ê      :      ë   kC:\Users\Fabiano\.nuget\packages\system.threading.timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll       í      :      ì   mC:\Users\Fabiano\.nuget\packages\system.xml.readerwriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll       î      :      ï   gC:\Users\Fabiano\.nuget\packages\system.xml.xdocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll       ñ      :      ó   cC:\Users\Fabiano\.nuget\packages\xunit.abstractions\2.0.3\lib\netstandard2.0\xunit.abstractions.dll       ò      ô      ö   WC:\Users\Fabiano\.nuget\packages\xunit.assert\2.4.1\lib\netstandard1.1\xunit.assert.dll       õ      ú      ù   aC:\Users\Fabiano\.nuget\packages\xunit.extensibility.core\2.4.1\lib\netstandard1.1\xunit.core.dll       û      ú      ü                   a   Internal.AspNetCore.BuildTasks    MessagePack    MessagePack.Annotations    MicroBuild.Core    Microsoft.Bcl.AsyncInterfaces    Microsoft.Build.Tasks.Git    Microsoft.DotNet.GenAPI    5Microsoft.Extensions.DependencyInjection.Abstractions    /Microsoft.Extensions.FileProviders.Abstractions    'Microsoft.Extensions.Internal.Transport    )Microsoft.Extensions.Logging.Abstractions    Microsoft.Extensions.Options    Microsoft.Extensions.Primitives    Microsoft.Net.Compilers.Toolset    Microsoft.NETCore.Platforms    Microsoft.NETCore.Targets    #Microsoft.SourceLink.AzureRepos.Git    Microsoft.SourceLink.Common    Microsoft.SourceLink.GitHub    Microsoft.Win32.Primitives    NETStandard.Library    Newtonsoft.Json    Hruntime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl    Iruntime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl    Iruntime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl    runtime.native.System    $runtime.native.System.IO.Compression    runtime.native.System.Net.Http    1runtime.native.System.Security.Cryptography.Apple    3runtime.native.System.Security.Cryptography.OpenSsl    Mruntime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl    Mruntime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl    Gruntime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple    Iruntime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl    Fruntime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl    Lruntime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl    Lruntime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl    Lruntime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl    System.AppContext    System.Buffers    System.Collections    System.Collections.Concurrent    System.Console    System.Diagnostics.Debug    #System.Diagnostics.DiagnosticSource    System.Diagnostics.Tools    System.Diagnostics.Tracing    System.Globalization    System.Globalization.Calendars    System.Globalization.Extensions    	System.IO    System.IO.Compression    System.IO.Compression.ZipFile    System.IO.FileSystem    System.IO.FileSystem.Primitives    System.IO.Pipelines    System.Linq    System.Linq.Expressions    System.Memory    System.Net.Http    System.Net.Primitives    System.Net.Sockets    System.ObjectModel    System.Reflection    System.Reflection.Emit    #System.Reflection.Emit.ILGeneration    "System.Reflection.Emit.Lightweight    System.Reflection.Extensions    System.Reflection.Primitives     System.Reflection.TypeExtensions     System.Resources.ResourceManager    System.Runtime    &System.Runtime.CompilerServices.Unsafe    System.Runtime.Extensions    System.Runtime.Handles    System.Runtime.InteropServices    1System.Runtime.InteropServices.RuntimeInformation    System.Runtime.Numerics    'System.Security.Cryptography.Algorithms     System.Security.Cryptography.Cng     System.Security.Cryptography.Csp    %System.Security.Cryptography.Encoding    $System.Security.Cryptography.OpenSsl    'System.Security.Cryptography.Primitives    -System.Security.Cryptography.X509Certificates    System.Text.Encoding    System.Text.Encoding.Extensions    System.Text.RegularExpressions    System.Threading    System.Threading.Tasks    !System.Threading.Tasks.Extensions    System.Threading.Timer    System.Xml.ReaderWriter    System.Xml.XDocument    xunit.abstractions    xunit.assert    xunit.extensibility.core       !C:\Users\Fabiano\.nuget\packages\    /C:\Program Files\dotnet\sdk\NuGetFallbackFolder        !   UC:\Users\Fabiano\.nuget\packages\messagepack\2.1.90\lib\netcoreapp2.1\MessagePack.dll                      †   °   ¢   £   §   •   nC:\Users\Fabiano\.nuget\packages\messagepack.annotations\2.1.90\lib\netstandard2.0\MessagePack.Annotations.dll                      †   °   ¢   £   §   ¶   yC:\Users\Fabiano\.nuget\packages\microsoft.bcl.asyncinterfaces\1.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll             	      ß   †   °   ¢   £   §   ®   ªC:\Users\Fabiano\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0-preview.8.20352.6\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll                      †   °   ¢   £   §   ©   ØC:\Users\Fabiano\.nuget\packages\microsoft.extensions.fileproviders.abstractions\5.0.0-preview.8.20352.6\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll                      †   °   ¢   £   §   ™   £C:\Users\Fabiano\.nuget\packages\microsoft.extensions.logging.abstractions\5.0.0-preview.8.20352.6\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll       3            4   †   °   ¢   £   §   ´   ÅC:\Users\Fabiano\.nuget\packages\microsoft.extensions.options\5.0.0-preview.8.20352.6\lib\net5.0\Microsoft.Extensions.Options.dll       5            6   †   °   ¢   £   §   ¨   éC:\Users\Fabiano\.nuget\packages\microsoft.extensions.primitives\5.0.0-preview.8.20352.6\lib\netcoreapp3.0\Microsoft.Extensions.Primitives.dll       7            8   †   °   ¢   £   §   ≠   ^C:\Users\Fabiano\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll       <      =      >   †   °   ¢   £   §   Æ   aC:\Users\Fabiano\.nuget\packages\system.appcontext\4.3.0\lib\netstandard1.6\System.AppContext.dll       ?      :      Ø   †   °   ¢   £   §   ∞   [C:\Users\Fabiano\.nuget\packages\system.buffers\4.3.0\lib\netstandard1.1\System.Buffers.dll       ±      :      ≤   †   °   ¢   £   §   ≥   yC:\Users\Fabiano\.nuget\packages\system.collections.concurrent\4.3.0\lib\netstandard1.3\System.Collections.Concurrent.dll       C      :      ¥   †   °   ¢   £   §   µ   ÖC:\Users\Fabiano\.nuget\packages\system.diagnostics.diagnosticsource\4.3.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll       ∂      :      ∑   †   °   ¢   £   §   ∏   yC:\Users\Fabiano\.nuget\packages\system.io.compression.zipfile\4.3.0\lib\netstandard1.3\System.IO.Compression.ZipFile.dll       U      :      π   †   °   ¢   £   §   ∫   }C:\Users\Fabiano\.nuget\packages\system.io.filesystem.primitives\4.3.0\lib\netstandard1.3\System.IO.FileSystem.Primitives.dll       Y      :      ª   †   °   ¢   £   §   º   vC:\Users\Fabiano\.nuget\packages\system.io.pipelines\5.0.0-preview.8.20352.6\lib\netcoreapp3.0\System.IO.Pipelines.dll       [            Ω   †   °   ¢   £   §   æ   UC:\Users\Fabiano\.nuget\packages\system.linq\4.3.0\lib\netstandard1.6\System.Linq.dll       ]      :      ø   †   °   ¢   £   §   ¿   mC:\Users\Fabiano\.nuget\packages\system.linq.expressions\4.3.0\lib\netstandard1.6\System.Linq.Expressions.dll       _      :      ¡   †   °   ¢   £   §   ¬   cC:\Users\Fabiano\.nuget\packages\system.objectmodel\4.3.0\lib\netstandard1.3\System.ObjectModel.dll       g      :      √   †   °   ¢   £   §   ƒ   ÖC:\Users\Fabiano\.nuget\packages\system.reflection.emit.ilgeneration\4.3.0\lib\netstandard1.3\System.Reflection.Emit.ILGeneration.dll       ≈      :      ∆   †   °   ¢   £   §   «   C:\Users\Fabiano\.nuget\packages\system.reflection.typeextensions\4.3.0\lib\netstandard1.5\System.Reflection.TypeExtensions.dll       »      :      …   †   °   ¢   £   §       äC:\Users\Fabiano\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.dll       s      t      À   †   °   ¢   £   §   Ã   °C:\Users\Fabiano\.nuget\packages\system.runtime.interopservices.runtimeinformation\4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll       |      :      Õ   †   °   ¢   £   §   Œ   mC:\Users\Fabiano\.nuget\packages\system.runtime.numerics\4.3.0\lib\netstandard1.3\System.Runtime.Numerics.dll       ~      :      œ   †   °   ¢   £   §   –   áC:\Users\Fabiano\.nuget\packages\system.security.cryptography.openssl\4.3.0\lib\netstandard1.6\System.Security.Cryptography.OpenSsl.dll       —      :      “   †   °   ¢   £   §   ”   çC:\Users\Fabiano\.nuget\packages\system.security.cryptography.primitives\4.3.0\lib\netstandard1.3\System.Security.Cryptography.Primitives.dll       Ñ      :      ‘   †   °   ¢   £   §   ’   {C:\Users\Fabiano\.nuget\packages\system.text.regularexpressions\4.3.0\lib\netstandard1.6\System.Text.RegularExpressions.dll       å      :      ÷   †   °   ¢   £   §   ◊   _C:\Users\Fabiano\.nuget\packages\system.threading\4.3.0\lib\netstandard1.3\System.Threading.dll       é      :      ÿ   †   °   ¢   £   §   Ÿ   mC:\Users\Fabiano\.nuget\packages\system.xml.readerwriter\4.3.0\lib\netstandard1.3\System.Xml.ReaderWriter.dll       î      :      ⁄   †   °   ¢   £   §   €   gC:\Users\Fabiano\.nuget\packages\system.xml.xdocument\4.3.0\lib\netstandard1.3\System.Xml.XDocument.dll       ñ      :      ‹   †   °   ¢   £   §   ›   cC:\Users\Fabiano\.nuget\packages\xunit.abstractions\2.0.3\lib\netstandard2.0\xunit.abstractions.dll       ò      ô      ö   †   °   ¢   £   §   ﬁ   WC:\Users\Fabiano\.nuget\packages\xunit.assert\2.4.1\lib\netstandard1.1\xunit.assert.dll       õ      ú      ù   †   °   ¢   £   §   ﬂ   aC:\Users\Fabiano\.nuget\packages\xunit.extensibility.core\2.4.1\lib\netstandard1.1\xunit.core.dll       û      ú      ü   †   °   ¢   £   §   ‡      ªC:\Users\Fabiano\.nuget\packages\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\debian.8-x64\native\System.Security.Cryptography.Native.OpenSsl.so       ·      :      ‚   †   „   ¢   £   §   ‰   Â   Ê   Á   Ë   ΩC:\Users\Fabiano\.nuget\packages\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\fedora.23-x64\native\System.Security.Cryptography.Native.OpenSsl.so       È      :      Í   †   „   ¢   £   §   Î   Â   Ï   Á   Ì   ΩC:\Users\Fabiano\.nuget\packages\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\fedora.24-x64\native\System.Security.Cryptography.Native.OpenSsl.so       Ó      :      Ô   †   „   ¢   £   §      Â   Ò   Á   Ú   ≈C:\Users\Fabiano\.nuget\packages\runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\opensuse.13.2-x64\native\System.Security.Cryptography.Native.OpenSsl.so       Û      :      Ù   †   „   ¢   £   §   ı   Â   ˆ   Á   ˜   ≈C:\Users\Fabiano\.nuget\packages\runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\opensuse.42.1-x64\native\System.Security.Cryptography.Native.OpenSsl.so       ¯      :      ˘   †   „   ¢   £   §   ˙   Â   ˚   Á   ¸   ºC:\Users\Fabiano\.nuget\packages\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple\4.3.0\runtimes\osx.10.10-x64\native\System.Security.Cryptography.Native.Apple.dylib       ˝      :      ˛   †   „   ¢   £   §   ˇ   Â      Á     ¿C:\Users\Fabiano\.nuget\packages\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\osx.10.10-x64\native\System.Security.Cryptography.Native.OpenSsl.dylib            :        †   „   ¢   £   §     Â      Á     ∑C:\Users\Fabiano\.nuget\packages\runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\rhel.7-x64\native\System.Security.Cryptography.Native.OpenSsl.so            :        †   „   ¢   £   §     Â     Á   	  √C:\Users\Fabiano\.nuget\packages\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\ubuntu.14.04-x64\native\System.Security.Cryptography.Native.OpenSsl.so       
+     :        †   „   ¢   £   §     Â     Á     √C:\Users\Fabiano\.nuget\packages\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\ubuntu.16.04-x64\native\System.Security.Cryptography.Native.OpenSsl.so            :        †   „   ¢   £   §     Â     Á     √C:\Users\Fabiano\.nuget\packages\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\4.3.0\runtimes\ubuntu.16.10-x64\native\System.Security.Cryptography.Native.OpenSsl.so            :        †   „   ¢   £   §     Â     Á     ãC:\Users\Fabiano\.nuget\packages\system.globalization.extensions\4.3.0\runtimes\unix\lib\netstandard1.3\System.Globalization.Extensions.dll            :        †   °   ¢   £   §     Â     Á     äC:\Users\Fabiano\.nuget\packages\system.globalization.extensions\4.3.0\runtimes\win\lib\netstandard1.3\System.Globalization.Extensions.dll            :        †   °   ¢   £   §     Â      Á   !  wC:\Users\Fabiano\.nuget\packages\system.io.compression\4.3.0\runtimes\unix\lib\netstandard1.3\System.IO.Compression.dll       S      :      "  †   °   ¢   £   §   #  Â     Á     vC:\Users\Fabiano\.nuget\packages\system.io.compression\4.3.0\runtimes\win\lib\netstandard1.3\System.IO.Compression.dll       S      :      $  †   °   ¢   £   §   %  Â      Á   !  kC:\Users\Fabiano\.nuget\packages\system.net.http\4.3.0\runtimes\unix\lib\netstandard1.6\System.Net.Http.dll       a      :      &  †   °   ¢   £   §   '  Â   (  Á     jC:\Users\Fabiano\.nuget\packages\system.net.http\4.3.0\runtimes\win\lib\netstandard1.3\System.Net.Http.dll       a      :      )  †   °   ¢   £   §   *  Â      Á   !  ØC:\Users\Fabiano\.nuget\packages\system.runtime.interopservices.runtimeinformation\4.3.0\runtimes\unix\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll       |      :      +  †   °   ¢   £   §   ,  Â   -  Á     ÆC:\Users\Fabiano\.nuget\packages\system.runtime.interopservices.runtimeinformation\4.3.0\runtimes\win\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll       |      :      .  †   °   ¢   £   §   /  Â   0  Á   !  öC:\Users\Fabiano\.nuget\packages\system.security.cryptography.algorithms\4.3.0\runtimes\osx\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dll       Ä      :      1  †   °   ¢   £   §   2  Â   3  Á   4  õC:\Users\Fabiano\.nuget\packages\system.security.cryptography.algorithms\4.3.0\runtimes\unix\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dll       Ä      :      5  †   °   ¢   £   §   6  Â   (  Á     öC:\Users\Fabiano\.nuget\packages\system.security.cryptography.algorithms\4.3.0\runtimes\win\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dll       Ä      :      7  †   °   ¢   £   §   8  Â   9  Á   !  çC:\Users\Fabiano\.nuget\packages\system.security.cryptography.cng\4.3.0\runtimes\unix\lib\netstandard1.6\System.Security.Cryptography.Cng.dll       :     :      ;  †   °   ¢   £   §   <  Â   (  Á     åC:\Users\Fabiano\.nuget\packages\system.security.cryptography.cng\4.3.0\runtimes\win\lib\netstandard1.6\System.Security.Cryptography.Cng.dll       :     :      =  †   °   ¢   £   §   >  Â   9  Á   !  çC:\Users\Fabiano\.nuget\packages\system.security.cryptography.csp\4.3.0\runtimes\unix\lib\netstandard1.3\System.Security.Cryptography.Csp.dll       ?     :      @  †   °   ¢   £   §   A  Â     Á     åC:\Users\Fabiano\.nuget\packages\system.security.cryptography.csp\4.3.0\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.Csp.dll       ?     :      B  †   °   ¢   £   §   C  Â      Á   !  óC:\Users\Fabiano\.nuget\packages\system.security.cryptography.encoding\4.3.0\runtimes\unix\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll       Ç      :      D  †   °   ¢   £   §   E  Â     Á     ñC:\Users\Fabiano\.nuget\packages\system.security.cryptography.encoding\4.3.0\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll       Ç      :      F  †   °   ¢   £   §   G  Â      Á   !  ïC:\Users\Fabiano\.nuget\packages\system.security.cryptography.openssl\4.3.0\runtimes\unix\lib\netstandard1.6\System.Security.Cryptography.OpenSsl.dll       —      :      H  †   °   ¢   £   §   I  Â   (  Á     ßC:\Users\Fabiano\.nuget\packages\system.security.cryptography.x509certificates\4.3.0\runtimes\unix\lib\netstandard1.6\System.Security.Cryptography.X509Certificates.dll       Ü      :      J  †   °   ¢   £   §   K  Â   (  Á     ¶C:\Users\Fabiano\.nuget\packages\system.security.cryptography.x509certificates\4.3.0\runtimes\win\lib\netstandard1.6\System.Security.Cryptography.X509Certificates.dll       Ü      :      L  †   °   ¢   £   §   M  Â   9  Á   !     h..\..\..\..\Http\Authentication.Abstractions\src\Microsoft.AspNetCore.Authentication.Abstractions.csproj       N     O  U..\..\..\..\Security\Authorization\Core\src\Microsoft.AspNetCore.Authorization.csproj       P     O  ^..\..\..\..\Security\Authorization\Policy\src\Microsoft.AspNetCore.Authorization.Policy.csproj       Q     O  e..\..\..\..\Servers\Connections.Abstractions\src\Microsoft.AspNetCore.Connections.Abstractions.csproj       R     O  T..\..\..\..\Http\Http.Abstractions\src\Microsoft.AspNetCore.Http.Abstractions.csproj       S     O  P..\..\..\..\Http\Http.Extensions\src\Microsoft.AspNetCore.Http.Extensions.csproj       T     O  L..\..\..\..\Http\Http.Features\src\Microsoft.AspNetCore.Http.Features.csproj       U     O  B..\..\..\..\Http\Metadata\src\Microsoft.AspNetCore.Metadata.csproj       V     O  @..\..\..\..\Http\Routing\src\Microsoft.AspNetCore.Routing.csproj       W     O  Z..\..\..\..\Http\Routing.Abstractions\src\Microsoft.AspNetCore.Routing.Abstractions.csproj       X     O  >..\..\..\..\Http\Headers\src\Microsoft.Net.Http.Headers.csproj       Y     O     ìUnable to find project information for %27E:\Projetos Visual Studio\aspnetcore\src\Analyzers\Internal.AspNetCore.Analyzers\src\Internal.AspNetCore.Analyzers.csproj%27. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.   Z  [  \  ]  ¯Unable to find project information for %27E:\Projetos Visual Studio\aspnetcore\src\ObjectPool\src\Microsoft.Extensions.ObjectPool.csproj%27. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.   Z  [  \  ]  ^  NuGetPackageIdMessagePackNuGetPackageVersion2.1.90PathInPackage!lib/netcoreapp2.1/MessagePack.dllMessagePack.Annotations.lib/netstandard2.0/MessagePack.Annotations.dllMicrosoft.Bcl.AsyncInterfaces1.0.04ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll5Microsoft.Extensions.DependencyInjection.Abstractions5.0.0-preview.8.20352.6Llib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll/Microsoft.Extensions.FileProviders.AbstractionsFlib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll'Microsoft.Extensions.Internal.Transport8ref/net5.0/Microsoft.Extensions.Caching.Abstractions.dll2ref/net5.0/Microsoft.Extensions.Caching.Memory.dll>ref/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll8ref/net5.0/Microsoft.Extensions.Configuration.Binder.dll=ref/net5.0/Microsoft.Extensions.Configuration.CommandLine.dllFref/net5.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll@ref/net5.0/Microsoft.Extensions.Configuration.FileExtensions.dll5ref/net5.0/Microsoft.Extensions.Configuration.Ini.dll6ref/net5.0/Microsoft.Extensions.Configuration.Json.dll=ref/net5.0/Microsoft.Extensions.Configuration.UserSecrets.dll5ref/net5.0/Microsoft.Extensions.Configuration.Xml.dll1ref/net5.0/Microsoft.Extensions.Configuration.dllDref/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll7ref/net5.0/Microsoft.Extensions.DependencyInjection.dll3ref/net5.0/Microsoft.Extensions.DependencyModel.dll>ref/net5.0/Microsoft.Extensions.FileProviders.Abstractions.dll;ref/net5.0/Microsoft.Extensions.FileProviders.Composite.dll:ref/net5.0/Microsoft.Extensions.FileProviders.Physical.dll6ref/net5.0/Microsoft.Extensions.FileSystemGlobbing.dll8ref/net5.0/Microsoft.Extensions.Hosting.Abstractions.dll+ref/net5.0/Microsoft.Extensions.Hosting.dll(ref/net5.0/Microsoft.Extensions.Http.dll8ref/net5.0/Microsoft.Extensions.Logging.Abstractions.dll9ref/net5.0/Microsoft.Extensions.Logging.Configuration.dll3ref/net5.0/Microsoft.Extensions.Logging.Console.dll1ref/net5.0/Microsoft.Extensions.Logging.Debug.dll4ref/net5.0/Microsoft.Extensions.Logging.EventLog.dll7ref/net5.0/Microsoft.Extensions.Logging.EventSource.dll7ref/net5.0/Microsoft.Extensions.Logging.TraceSource.dll+ref/net5.0/Microsoft.Extensions.Logging.dllCref/net5.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll;ref/net5.0/Microsoft.Extensions.Options.DataAnnotations.dll+ref/net5.0/Microsoft.Extensions.Options.dll.ref/net5.0/Microsoft.Extensions.Primitives.dll)Microsoft.Extensions.Logging.Abstractions@lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dllMicrosoft.Extensions.Options+lib/net5.0/Microsoft.Extensions.Options.dllMicrosoft.Extensions.Primitives5lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dllMicrosoft.Win32.Primitives4.3.01ref/netstandard1.3/Microsoft.Win32.Primitives.dllNewtonsoft.Json12.0.2&lib/netstandard2.0/Newtonsoft.Json.dllSystem.AppContext(ref/netstandard1.6/System.AppContext.dllSystem.Collections)ref/netstandard1.3/System.Collections.dllSystem.Collections.Concurrent4ref/netstandard1.3/System.Collections.Concurrent.dllSystem.Console%ref/netstandard1.3/System.Console.dllSystem.Diagnostics.Debug/ref/netstandard1.3/System.Diagnostics.Debug.dllSystem.Diagnostics.Tools/ref/netstandard1.0/System.Diagnostics.Tools.dllSystem.Diagnostics.Tracing1ref/netstandard1.5/System.Diagnostics.Tracing.dllSystem.Globalization+ref/netstandard1.3/System.Globalization.dllSystem.Globalization.Calendars5ref/netstandard1.3/System.Globalization.Calendars.dll	System.IO ref/netstandard1.5/System.IO.dllSystem.IO.Compression,ref/netstandard1.3/System.IO.Compression.dllSystem.IO.Compression.ZipFile4ref/netstandard1.3/System.IO.Compression.ZipFile.dllSystem.IO.FileSystem+ref/netstandard1.3/System.IO.FileSystem.dllSystem.IO.FileSystem.Primitives6ref/netstandard1.3/System.IO.FileSystem.Primitives.dllSystem.IO.Pipelines)ref/netcoreapp2.0/System.IO.Pipelines.dllSystem.Linq"ref/netstandard1.6/System.Linq.dllSystem.Linq.Expressions.ref/netstandard1.6/System.Linq.Expressions.dllSystem.Net.Http&ref/netstandard1.3/System.Net.Http.dllSystem.Net.Primitives,ref/netstandard1.3/System.Net.Primitives.dllSystem.Net.Sockets)ref/netstandard1.3/System.Net.Sockets.dllSystem.ObjectModel)ref/netstandard1.3/System.ObjectModel.dllSystem.Reflection(ref/netstandard1.5/System.Reflection.dllSystem.Reflection.Extensions3ref/netstandard1.0/System.Reflection.Extensions.dllSystem.Reflection.Primitives3ref/netstandard1.0/System.Reflection.Primitives.dll System.Resources.ResourceManager7ref/netstandard1.0/System.Resources.ResourceManager.dllSystem.Runtime%ref/netstandard1.5/System.Runtime.dll&System.Runtime.CompilerServices.Unsafe4.5.2=ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dllSystem.Runtime.Extensions0ref/netstandard1.5/System.Runtime.Extensions.dllSystem.Runtime.Handles-ref/netstandard1.3/System.Runtime.Handles.dllSystem.Runtime.InteropServices4ref/netcoreapp1.1/System.Runtime.InteropServices.dll1System.Runtime.InteropServices.RuntimeInformationHref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dllSystem.Runtime.Numerics.ref/netstandard1.1/System.Runtime.Numerics.dll'System.Security.Cryptography.Algorithms>ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll%System.Security.Cryptography.Encoding<ref/netstandard1.3/System.Security.Cryptography.Encoding.dll'System.Security.Cryptography.Primitives>ref/netstandard1.3/System.Security.Cryptography.Primitives.dll-System.Security.Cryptography.X509CertificatesDref/netstandard1.4/System.Security.Cryptography.X509Certificates.dllSystem.Text.Encoding+ref/netstandard1.3/System.Text.Encoding.dllSystem.Text.Encoding.Extensions6ref/netstandard1.3/System.Text.Encoding.Extensions.dllSystem.Text.RegularExpressions4ref/netcoreapp1.1/System.Text.RegularExpressions.dllSystem.Threading'ref/netstandard1.3/System.Threading.dllSystem.Threading.Tasks-ref/netstandard1.3/System.Threading.Tasks.dllSystem.Threading.Timer-ref/netstandard1.2/System.Threading.Timer.dllSystem.Xml.ReaderWriter.ref/netstandard1.3/System.Xml.ReaderWriter.dllSystem.Xml.XDocument+ref/netstandard1.3/System.Xml.XDocument.dllxunit.abstractions2.0.3)lib/netstandard2.0/xunit.abstractions.dllxunit.assert2.4.1#lib/netstandard1.1/xunit.assert.dllxunit.extensibility.core!lib/netstandard1.1/xunit.core.dll	AssetTyperuntime	CopyLocaltrueDestinationSubPathMessagePack.dllMessagePack.Annotations.dll4lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll!Microsoft.Bcl.AsyncInterfaces.dll9Microsoft.Extensions.DependencyInjection.Abstractions.dll3Microsoft.Extensions.FileProviders.Abstractions.dll-Microsoft.Extensions.Logging.Abstractions.dll Microsoft.Extensions.Options.dll#Microsoft.Extensions.Primitives.dllNewtonsoft.Json.dll(lib/netstandard1.6/System.AppContext.dllSystem.AppContext.dllSystem.Buffers%lib/netstandard1.1/System.Buffers.dllSystem.Buffers.dll4lib/netstandard1.3/System.Collections.Concurrent.dll!System.Collections.Concurrent.dll#System.Diagnostics.DiagnosticSource:lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll'System.Diagnostics.DiagnosticSource.dll4lib/netstandard1.3/System.IO.Compression.ZipFile.dll!System.IO.Compression.ZipFile.dll6lib/netstandard1.3/System.IO.FileSystem.Primitives.dll#System.IO.FileSystem.Primitives.dll)lib/netcoreapp3.0/System.IO.Pipelines.dllSystem.IO.Pipelines.dll"lib/netstandard1.6/System.Linq.dllSystem.Linq.dll.lib/netstandard1.6/System.Linq.Expressions.dllSystem.Linq.Expressions.dll)lib/netstandard1.3/System.ObjectModel.dllSystem.ObjectModel.dll#System.Reflection.Emit.ILGeneration:lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll'System.Reflection.Emit.ILGeneration.dll System.Reflection.TypeExtensions7lib/netstandard1.5/System.Reflection.TypeExtensions.dll$System.Reflection.TypeExtensions.dll<lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll*System.Runtime.CompilerServices.Unsafe.dllHlib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll5System.Runtime.InteropServices.RuntimeInformation.dll.lib/netstandard1.3/System.Runtime.Numerics.dllSystem.Runtime.Numerics.dll$System.Security.Cryptography.OpenSsl;lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll(System.Security.Cryptography.OpenSsl.dll>lib/netstandard1.3/System.Security.Cryptography.Primitives.dll+System.Security.Cryptography.Primitives.dll5lib/netstandard1.6/System.Text.RegularExpressions.dll"System.Text.RegularExpressions.dll'lib/netstandard1.3/System.Threading.dllSystem.Threading.dll.lib/netstandard1.3/System.Xml.ReaderWriter.dllSystem.Xml.ReaderWriter.dll+lib/netstandard1.3/System.Xml.XDocument.dllSystem.Xml.XDocument.dllxunit.abstractions.dllxunit.assert.dllxunit.core.dllHruntime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSslKruntimes/debian.8-x64/native/System.Security.Cryptography.Native.OpenSsl.sonativeKruntimes\debian.8-x64\native\System.Security.Cryptography.Native.OpenSsl.soDestinationSubDirectoryruntimes\debian.8-x64\native\RuntimeIdentifierdebian.8-x64Iruntime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSslLruntimes/fedora.23-x64/native/System.Security.Cryptography.Native.OpenSsl.soLruntimes\fedora.23-x64\native\System.Security.Cryptography.Native.OpenSsl.soruntimes\fedora.23-x64\native\fedora.23-x64Iruntime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSslLruntimes/fedora.24-x64/native/System.Security.Cryptography.Native.OpenSsl.soLruntimes\fedora.24-x64\native\System.Security.Cryptography.Native.OpenSsl.soruntimes\fedora.24-x64\native\fedora.24-x64Mruntime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSslPruntimes/opensuse.13.2-x64/native/System.Security.Cryptography.Native.OpenSsl.soPruntimes\opensuse.13.2-x64\native\System.Security.Cryptography.Native.OpenSsl.so"runtimes\opensuse.13.2-x64\native\opensuse.13.2-x64Mruntime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSslPruntimes/opensuse.42.1-x64/native/System.Security.Cryptography.Native.OpenSsl.soPruntimes\opensuse.42.1-x64\native\System.Security.Cryptography.Native.OpenSsl.so"runtimes\opensuse.42.1-x64\native\opensuse.42.1-x64Gruntime.osx.10.10-x64.runtime.native.System.Security.Cryptography.AppleMruntimes/osx.10.10-x64/native/System.Security.Cryptography.Native.Apple.dylibMruntimes\osx.10.10-x64\native\System.Security.Cryptography.Native.Apple.dylibruntimes\osx.10.10-x64\native\osx.10.10-x64Iruntime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSslOruntimes/osx.10.10-x64/native/System.Security.Cryptography.Native.OpenSsl.dylibOruntimes\osx.10.10-x64\native\System.Security.Cryptography.Native.OpenSsl.dylibFruntime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSslIruntimes/rhel.7-x64/native/System.Security.Cryptography.Native.OpenSsl.soIruntimes\rhel.7-x64\native\System.Security.Cryptography.Native.OpenSsl.soruntimes\rhel.7-x64\native\
+rhel.7-x64Lruntime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSslOruntimes/ubuntu.14.04-x64/native/System.Security.Cryptography.Native.OpenSsl.soOruntimes\ubuntu.14.04-x64\native\System.Security.Cryptography.Native.OpenSsl.so!runtimes\ubuntu.14.04-x64\native\ubuntu.14.04-x64Lruntime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSslOruntimes/ubuntu.16.04-x64/native/System.Security.Cryptography.Native.OpenSsl.soOruntimes\ubuntu.16.04-x64\native\System.Security.Cryptography.Native.OpenSsl.so!runtimes\ubuntu.16.04-x64\native\ubuntu.16.04-x64Lruntime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSslOruntimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.soOruntimes\ubuntu.16.10-x64\native\System.Security.Cryptography.Native.OpenSsl.so!runtimes\ubuntu.16.10-x64\native\ubuntu.16.10-x64System.Globalization.ExtensionsDruntimes/unix/lib/netstandard1.3/System.Globalization.Extensions.dllDruntimes\unix\lib\netstandard1.3\System.Globalization.Extensions.dll!runtimes\unix\lib\netstandard1.3\unixCruntimes/win/lib/netstandard1.3/System.Globalization.Extensions.dllCruntimes\win\lib\netstandard1.3\System.Globalization.Extensions.dll runtimes\win\lib\netstandard1.3\win:runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll:runtimes\unix\lib\netstandard1.3\System.IO.Compression.dll9runtimes/win/lib/netstandard1.3/System.IO.Compression.dll9runtimes\win\lib\netstandard1.3\System.IO.Compression.dll4runtimes/unix/lib/netstandard1.6/System.Net.Http.dll4runtimes\unix\lib\netstandard1.6\System.Net.Http.dll!runtimes\unix\lib\netstandard1.6\3runtimes/win/lib/netstandard1.3/System.Net.Http.dll3runtimes\win\lib\netstandard1.3\System.Net.Http.dllVruntimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dllVruntimes\unix\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll!runtimes\unix\lib\netstandard1.1\Uruntimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dllUruntimes\win\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll runtimes\win\lib\netstandard1.1\Kruntimes/osx/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dllKruntimes\osx\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dll runtimes\osx\lib\netstandard1.6\osxLruntimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dllLruntimes\unix\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dllKruntimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dllKruntimes\win\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dll runtimes\win\lib\netstandard1.6\ System.Security.Cryptography.CngEruntimes/unix/lib/netstandard1.6/System.Security.Cryptography.Cng.dllEruntimes\unix\lib\netstandard1.6\System.Security.Cryptography.Cng.dllDruntimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dllDruntimes\win\lib\netstandard1.6\System.Security.Cryptography.Cng.dll System.Security.Cryptography.CspEruntimes/unix/lib/netstandard1.3/System.Security.Cryptography.Csp.dllEruntimes\unix\lib\netstandard1.3\System.Security.Cryptography.Csp.dllDruntimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dllDruntimes\win\lib\netstandard1.3\System.Security.Cryptography.Csp.dllJruntimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dllJruntimes\unix\lib\netstandard1.3\System.Security.Cryptography.Encoding.dllIruntimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dllIruntimes\win\lib\netstandard1.3\System.Security.Cryptography.Encoding.dllIruntimes/unix/lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dllIruntimes\unix\lib\netstandard1.6\System.Security.Cryptography.OpenSsl.dllRruntimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dllRruntimes\unix\lib\netstandard1.6\System.Security.Cryptography.X509Certificates.dllQruntimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dllQruntimes\win\lib\netstandard1.6\System.Security.Cryptography.X509Certificates.dll0Microsoft.AspNetCore.Authentication.Abstractions	5.0.0-dev"Microsoft.AspNetCore.Authorization)Microsoft.AspNetCore.Authorization.Policy-Microsoft.AspNetCore.Connections.Abstractions&Microsoft.AspNetCore.Http.Abstractions$Microsoft.AspNetCore.Http.Extensions"Microsoft.AspNetCore.Http.FeaturesMicrosoft.AspNetCore.MetadataMicrosoft.AspNetCore.Routing)Microsoft.AspNetCore.Routing.AbstractionsMicrosoft.Net.Http.HeadersDiagnosticCodeNU1105SeverityError                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              declare module "tls" {
+    import * as crypto from "crypto";
+    import * as dns from "dns";
+    import * as net from "net";
+    import * as stream from "stream";
+
+    const CLIENT_RENEG_LIMIT: number;
+    const CLIENT_RENEG_WINDOW: number;
+
+    interface Certificate {
+        /**
+         * Country code.
+         */
+        C: string;
+        /**
+         * Street.
+         */
+        ST: string;
+        /**
+         * Locality.
+         */
+        L: string;
+        /**
+         * Organization.
+         */
+        O: string;
+        /**
+         * Organizational unit.
+         */
+        OU: string;
+        /**
+         * Common name.
+         */
+        CN: string;
+    }
+
+    interface PeerCertificate {
+        subject: Certificate;
+        issuer: Certificate;
+        subjectaltname: string;
+        infoAccess: NodeJS.Dict<string[]>;
+        modulus: string;
+        exponent: string;
+        valid_from: string;
+        valid_to: string;
+        fingerprint: string;
+        fingerprint256: string;
+        ext_key_usage: string[];
+        serialNumber: string;
+        raw: Buffer;
+    }
+
+    interface DetailedPeerCertificate extends PeerCertificate {
+        issuerCertificate: DetailedPeerCertificate;
+    }
+
+    interface CipherNameAndProtocol {
+        /**
+         * The cipher name.
+         */
+        name: string;
+        /**
+         * SSL/TLS protocol version.
+         */
+        version: string;
+
+        /**
+         * IETF name for the cipher suite.
+         */
+        standardName: string;
+    }
+
+    interface EphemeralKeyInfo {
+        /**
+         * The supported types are 'DH' and 'ECDH'.
+         */
+        type: string;
+        /**
+         * The name property is available only when type is 'ECDH'.
+         */
+        name?: string;
+        /**
+         * The size of parameter of an ephemeral key exchange.
+         */
+        size: number;
+    }
+
+    interface KeyObject {
+        /**
+         * Private keys in PEM format.
+         */
+        pem: string | Buffer;
+        /**
+         * Optional passphrase.
+         */
+        passphrase?: string;
+    }
+
+    interface PxfObject {
+        /**
+         * PFX or PKCS12 encoded private key and certificate chain.
+         */
+        buf: string | Buffer;
+        /**
+         * Optional passphrase.
+         */
+        passphrase?: string;
+    }
+
+    interface TLSSocketOptions extends SecureContextOptions, CommonConnectionOptions {
+        /**
+         * If true the TLS socket will be instantiated in server-mode.
+         * Defaults to false.
+         */
+        isServer?: boolean;
+        /**
+         * An optional net.Server instance.
+         */
+        server?: net.Server;
+
+        /**
+         * An optional Buffer instance containing a TLS session.
+         */
+        session?: Buffer;
+        /**
+         * If true, specifies that the OCSP status request extension will be
+         * added to the client hello and an 'OCSPResponse' event will be
+         * emitted on the socket before establishing a secure communication
+         */
+        requestOCSP?: boolean;
+    }
+
+    class TLSSocket extends net.Socket {
+        /**
+         * Construct a new tls.TLSSocket object from an existing TCP socket.
+         */
+        constructor(socket: net.Socket, options?: TLSSocketOptions);
+
+        /**
+         * A boolean that is true if the peer certificate was signed by one of the specified CAs, otherwise false.
+         */
+        authorized: boolean;
+        /**
+         * The reason why the peer's certificate has not been verified.
+         * This property becomes available only when tlsSocket.authorized === false.
+         */
+        authorizationError: Error;
+        /**
+         * Static boolean value, always true.
+         * May be used to distinguish TLS sockets from regular ones.
+         */
+        encrypted: boolean;
+
+        /**
+         * String containing the selected ALPN protocol.
+         * When ALPN has no selected protocol, tlsSocket.alpnProtocol equals false.
+         */
+        alpnProtocol?: string;
+
+        /**
+         * Returns an object representing the local certificate. The returned
+         * object has some properties corresponding to the fields of the
+         * certificate.
+         *
+         * See tls.TLSSocket.getPeerCertificate() for an example of the
+         * certificate structure.
+         *
+         * If there is no local certificate, an empty object will be returned.
+         * If the socket has been destroyed, null will be returned.
+         */
+        getCertificate(): PeerCertificate | object | null;
+        /**
+         * Returns an object representing the cipher name and the SSL/TLS protocol version of the current connection.
+         * @returns Returns an object representing the cipher name
+         * and the SSL/TLS protocol version of the current connection.
+         */
+        getCipher(): CipherNameAndProtocol;
+        /**
+         * Returns an object representing the type, name, and size of parameter
+         * of an ephemeral key exchange in Perfect Forward Secrecy on a client
+         * connection. It returns an empty object when the key exchange is not
+         * ephemeral. As this is only supported on a client socket; null is
+         * returned if called on a server socket. The supported types are 'DH'
+         * and 'ECDH'. The name property is available only when type is 'ECDH'.
+         *
+         * For example: { type: 'ECDH', name: 'prime256v1', size: 256 }.
+         */
+        getEphemeralKeyInfo(): EphemeralKeyInfo | object | null;
+        /**
+         * Returns the latest Finished message that has
+         * been sent to the socket as part of a SSL/TLS handshake, or undefined
+         * if no Finished message has been sent yet.
+         *
+         * As the Finished messages are message digests of the complete
+         * handshake (with a total of 192 bits for TLS 1.0 and more for SSL
+         * 3.0), they can be used for external authentication procedures when
+         * the authentication provided by SSL/TLS is not desired or is not
+         * enough.
+         *
+         * Corresponds to the SSL_get_finished routine in OpenSSL and may be
+         * used to implement the tls-unique channel binding from RFC 5929.
+         */
+        getFinished(): Buffer | undefined;
+        /**
+         * Returns an object representing the peer's certificate.
+         * The returned object has some properties corresponding to the field of the certificate.
+         * If detailed argument is true the full chain with issuer property will be returned,
+         * if false only the top certificate without issuer property.
+         * If the peer does not provide a certificate, it returns null or an empty object.
+         * @param detailed - If true; the full chain with issuer property will be returned.
+         * @returns An object representing the peer's certificate.
+         */
+        getPeerCertificate(detailed: true): DetailedPeerCertificate;
+        getPeerCertificate(detailed?: false): PeerCertificate;
+        getPeerCertificate(detailed?: boolean): PeerCertificate | DetailedPeerCertificate;
+        /**
+         * Returns the latest Finished message that is expected or has actually
+         * been received from the socket as part of a SSL/TLS handshake, or
+         * undefined if there is no Finished message so far.
+         *
+         * As the Finished messages are message digests of the complete
+         * handshake (with a total of 192 bits for TLS 1.0 and more for SSL
+         * 3.0), they can be used for external authentication procedures when
+         * the authentication provided by SSL/TLS is not desired or is not
+         * enough.
+         *
+         * Corresponds to the SSL_get_peer_finished routine in OpenSSL and may
+         * be used to implement the tls-unique channel binding from RFC 5929.
+         */
+        getPeerFinished(): Buffer | undefined;
+        /**
+         * Returns a string containing the negotiated SSL/TLS protocol version of the current connection.
+         * The value `'unknown'` will be returned for connected sockets that have not completed the handshaking process.
+         * The value `null` will be returned for server sockets or disconnected client sockets.
+         * See https://www.openssl.org/docs/man1.0.2/ssl/SSL_get_version.html for more information.
+         * @returns negotiated SSL/TLS protocol version of the current connection
+         */
+        getProtocol(): string | null;
+        /**
+         * Could be used to speed up handshake establishment when reconnecting to the server.
+         * @returns ASN.1 encoded TLS session or undefined if none was negotiated.
+         */
+        getSession(): Buffer | undefined;
+        /**
+         * Returns a list of signature algorithms shared between the server and
+         * the client in the order of decreasing preference.
+         */
+        getSharedSigalgs(): string[];
+        /**
+         * NOTE: Works only with client TLS sockets.
+         * Useful only for debugging, for session reuse provide session option to tls.connect().
+         * @returns TLS session ticket or undefined if none was negotiated.
+         */
+        getTLSTicket(): Buffer | undefined;
+        /**
+         * Returns true if the session was reused, false otherwise.
+         */
+        isSessionReused(): boolean;
+        /**
+         * Initiate TLS renegotiation process.
+         *
+         * NOTE: Can be used to request peer's certificate after the secure connection has been established.
+         * ANOTHER NOTE: When running as the server, socket will be destroyed with an error after handshakeTimeout timeout.
+         * @param options - The options may contain the following fields: rejectUnauthorized,
+         * requestCert (See tls.createServer() for details).
+         * @param callback - callback(err) will be executed with null as err, once the renegotiation
+         * is successfully completed.
+         * @return `undefined` when socket is destroy, `false` if negotiaion can't be initiated.
+         */
+        renegotiate(options: { rejectUnauthorized?: boolean, requestCert?: boolean }, callback: (err: Error | null) => void): undefined | boolean;
+        /**
+         * Set maximum TLS fragment size (default and maximum value is: 16384, minimum is: 512).
+         * Smaller fragment size decreases buffering latency on the client: large fragments are buffered by
+         * the TLS layer until the entire fragment is received and its integrity is verified;
+         * large fragments can span multiple roundtrips, and their processing can be delayed due to packet
+         * loss or reordering. However, smaller fragments add extra TLS framing bytes and CPU overhead,
+         * which may decrease overall server throughput.
+         * @param size - TLS fragment size (default and maximum value is: 16384, minimum is: 512).
+         * @returns Returns true on success, false otherwise.
+         */
+        setMaxSendFragment(size: number): boolean;
+
+        /**
+         * Disables TLS renegotiation for this TLSSocket instance. Once called,
+         * attempts to renegotiate will trigger an 'error' event on the
+         * TLSSocket.
+         */
+        disableRenegotiation(): void;
+
+        /**
+         * When enabled, TLS packet trace information is written to `stderr`. This can be
+         * used to debug TLS connection problems.
+         *
+         * Note: The format of the output is identical to the output of `openssl s_client
+         * -trace` or `openssl s_server -trace`. While it is produced by OpenSSL's
+         * `SSL_trace()` function, the format is undocumented, can change without notice,
+         * and should not be relied on.
+         */
+        enableTrace(): void;
+
+        /**
+         * @param length number of bytes to retrieve from keying material
+         * @param label an application specific label, typically this will be a value from the
+         * [IANA Exporter Label Registry](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#exporter-labels).
+         * @param context optionally provide a context.
+         */
+        exportKeyingMaterial(length: number, label: string, context: Buffer): Buffer;
+
+        addListener(event: string, listener: (...args: any[]) => void): this;
+        addListener(event: "OCSPResponse", listener: (response: Buffer) => void): this;
+        addListener(event: "secureConnect", listener: () => void): this;
+        addListener(event: "session", listener: (session: Buffer) => void): this;
+        addListener(event: "keylog", listener: (line: Buffer) => void): this;
+
+        emit(event: string | symbol, ...args: any[]): boolean;
+        emit(event: "OCSPResponse", response: Buffer): boolean;
+        emit(event: "secureConnect"): boolean;
+        emit(event: "session", session: Buffer): boolean;
+        emit(event: "keylog", line: Buffer): boolean;
+
+        on(event: string, listener: (...args: any[]) => void): this;
+        on(event: "OCSPResponse", listener: (response: Buffer) => void): this;
+        on(event: "secureConnect", listener: () => void): this;
+        on(event: "session", listener: (session: Buffer) => void): this;
+        on(event: "keylog", listener: (line: Buffer) => void): this;
+
+        once(event: string, listener: (...args: any[]) => void): this;
+        once(event: "OCSPResponse", listener: (response: Buffer) => void): this;
+        once(event: "secureConnect", listener: () => void): this;
+        once(event: "session", listener: (session: Buffer) => void): this;
+        once(event: "keylog", listener: (line: Buffer) => void): this;
+
+        prependListener(event: string, listener: (...args: any[]) => void): this;
+        prependListener(event: "OCSPResponse", listener: (response: Buffer) => void): this;
+        prependListener(event: "secureConnect", listener: () => void): this;
+        prependListener(event: "session", listener: (session: Buffer) => void): this;
+        prependListener(event: "keylog", listener: (line: Buffer) => void): this;
+
+        prependOnceListener(event: string, listener: (...args: any[]) => void): this;
+        prependOnceListener(event: "OCSPResponse", listener: (response: Buffer) => void): this;
+        prependOnceListener(event: "secureConnect", listener: () => void): this;
+        prependOnceListener(event: "session", listener: (session: Buffer) => void): this;
+        prependOnceListener(event: "keylog", listener: (line: Buffer) => void): this;
+    }
+
+    interface CommonConnectionOptions {
+        /**
+         * An optional TLS context object from tls.createSecureContext()
+         */
+        secureContext?: SecureContext;
+
+        /**
+         * When enabled, TLS packet trace information is written to `stderr`. This can be
+         * used to debug TLS connection problems.
+         * @default false
+         */
+        enableTrace?: boolean;
+        /**
+         * If true the server will request a certificate from clients that
+         * connect and attempt to verify that certificate. Defaults to
+         * false.
+         */
+        requestCert?: boolean;
+        /**
+         * An array of strings or a Buffer naming possible ALPN protocols.
+         * (Protocols should be ordered by their priority.)
+         */
+        ALPNProtocols?: string[] | Uint8Array[] | Uint8Array;
+        /**
+         * SNICallback(servername, cb) <Function> A function that will be
+         * called if the client supports SNI TLS extension. Two arguments
+         * will be passed when called: servername and cb. SNICallback should
+         * invoke cb(null, ctx), where ctx is a SecureContext instance.
+         * (tls.createSecureContext(...) can be used to get a proper
+         * SecureContext.) If SNICallback wasn't provided the default callback
+         * with high-level API will be used (see below).
+         */
+        SNICallback?: (servername: string, cb: (err: Error | null, ctx: SecureContext) => void) => void;
+        /**
+         * If true the server will reject any connection which is not
+         * authorized with the list of supplied CAs. This option only has an
+         * effect if requestCert is true.
+         * @default true
+         */
+        rejectUnauthorized?: boolean;
+    }
+
+    interface TlsOptions extends SecureContextOptions, CommonConnectionOptions {
+        /**
+         * Abort the connection if the SSL/TLS handshake does not finish in the
+         * specified number of milliseconds. A 'tlsClientError' is emitted on
+         * the tls.Server object whenever a handshake times out. Default:
+         * 120000 (120 seconds).
+         */
+        handshakeTimeout?: number;
+        /**
+         * The number of seconds after which a TLS session created by the
+         * server will no longer be resumable. See Session Resumption for more
+         * information. Default: 300.
+         */
+        sessionTimeout?: number;
+        /**
+         * 48-bytes of cryptographically strong pseudo-random data.
+         */
+        ticketKeys?: Buffer;
+
+        /**
+         *
+         * @param socket
+         * @param identity identity parameter sent from the client.
+         * @return pre-shared key that must either be
+         * a buffer or `null` to stop the negotiation process. Returned PSK must be
+         * compatible with the selected cipher's digest.
+         *
+         * When negotiating TLS-PSK (pre-shared keys), this function is called
+         * with the identity provided by the client.
+         * If the return value is `null` the negotiation process will stop and an
+         * "unknown_psk_identity" alert message will be sent to the other party.
+         * If the server wishes to hide the fact that the PSK identity was not known,
+         * the callback must provide some random data as `psk` to make the connection
+         * fail with "decrypt_error" before negotiation is finished.
+         * PSK ciphers are disabled by default, and using TLS-PSK thus
+         * requires explicitly specifying a cipher suite with the `ciphers` option.
+         * More information can be found in the RFC 4279.
+         */
+
+        pskCallback?(socket: TLSSocket, identity: string): DataView | NodeJS.TypedArray | null;
+        /**
+         * hint to send to a client to help
+         * with selecting the identity during TLS-PSK negotiation. Will be ignored
+         * in TLS 1.3. Upon failing to set pskIdentityHint `tlsClientError` will be
+         * emitted with `ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED` code.
+         */
+        pskIdentityHint?: string;
+    }
+
+    interface PSKCallbackNegotation {
+        psk: DataView | NodeJS.TypedArray;
+        identitty: string;
+    }
+
+    interface ConnectionOptions extends SecureContextOptions, CommonConnectionOptions {
+        host?: string;
+        port?: number;
+        path?: string; // Creates unix socket connection to path. If this option is specified, `host` and `port` are ignored.
+        socket?: net.Socket; // Establish secure connection on a given socket rather than creating a new socket
+        checkServerIdentity?: typeof checkServerIdentity;
+        servername?: string; // SNI TLS Extension
+        session?: Buffer;
+        minDHSize?: number;
+        lookup?: net.LookupFunction;
+        timeout?: number;
+        /**
+         * When negotiating TLS-PSK (pre-shared keys), this function is called
+         * with optional identity `hint` provided by the server or `null`
+         * in case of TLS 1.3 where `hint` was removed.
+         * It will be necessary to provide a custom `tls.checkServerIdentity()`
+         * for the connection as the default one will try to check hostname/IP
+         * of the server against the certificate but that's not applicable for PSK
+         * because there won't be a certificate present.
+         * More information can be found in the RFC 4279.
+         *
+         * @param hint message sent from the server to help client
+         * decide which identity to use during negotiation.
+         * Always `null` if TLS 1.3 is used.
+         * @returns Return `null` to stop the negotiation process. `psk` must be
+         * compatible with the selected cipher's digest.
+         * `identity` must use UTF-8 encoding.
+         */
+        pskCallback?(hint: string | null): PSKCallbackNegotation | null;
+    }
+
+    class Server extends net.Server {
+        /**
+         * The server.addContext() method adds a secure context that will be
+         * used if the client request's SNI name matches the supplied hostname
+         * (or wildcard).
+         */
+        addContext(hostName: string, credentials: SecureContextOptions): void;
+        /**
+         * Returns the session ticket keys.
+         */
+        getTicketKeys(): Buffer;
+        /**
+         *
+         * The server.setSecureContext() method replaces the
+         * secure context of an existing server. Existing connections to the
+         * server are not interrupted.
+         */
+        setSecureContext(details: SecureContextOptions): void;
+        /**
+         * The server.setSecureContext() method replaces the secure context of
+         * an existing server. Existing connections to the server are not
+         * interrupted.
+         */
+        setTicketKeys(keys: Buffer): void;
+
+        /**
+         * events.EventEmitter
+         * 1. tlsClientError
+         * 2. newSession
+         * 3. OCSPRequest
+         * 4. resumeSession
+         * 5. secureConnection
+         * 6. keylog
+         */
+        addListener(event: string, listener: (...args: any[]) => void): this;
+        addListener(event: "tlsClientError", listener: (err: Error, tlsSocket: TLSSocket) => void): this;
+        addListener(event: "newSession", listener: (sessionId: Buffer, sessionData: Buffer, callback: (err: Error, resp: Buffer) => void) => void): this;
+        addListener(event: "OCSPRequest", listener: (certificate: Buffer, issuer: Buffer, callback: (err: Error | null, resp: Buffer) => void) => void): this;
+        addListener(event: "resumeSession", listener: (sessionId: Buffer, callback: (err: Error, sessionData: Buffer) => void) => void): this;
+        addListener(event: "secureConnection", listener: (tlsSocket: TLSSocket) => void): this;
+        addListener(event: "keylog", listener: (line: Buffer, tlsSocket: TLSSocket) => void): this;
+
+        emit(event: string | symbol, ...args: any[]): boolean;
+        emit(event: "tlsClientError", err: Error, tlsSocket: TLSSocket): boolean;
+        emit(event: "newSession", sessionId: Buffer, sessionData: Buffer, callback: (err: Error, resp: Buffer) => void): boolean;
+        emit(event: "OCSPRequest", certificate: Buffer, issuer: Buffer, callback: (err: Error | null, resp: Buffer) => void): boolean;
+        emit(event: "resumeSession", sessionId: Buffer, callback: (err: Error, sessionData: Buffer) => void): boolean;
+        emit(event: "secureConnection", tlsSocket: TLSSocket): boolean;
+        emit(event: "keylog", line: Buffer, tlsSocket: TLSSocket): boolean;
+
+        on(event: string, listener: (...args: any[]) => void): this;
+        on(event: "tlsClientError", listener: (err: Error, tlsSocket: TLSSocket) => void): this;
+        on(event: "newSession", listener: (sessionId: Buffer, sessionData: Buffer, callback: (err: Error, resp: Buffer) => void) => void): this;
+        on(event: "OCSPRequest", listener: (certificate: Buffer, issuer: Buffer, callback: (err: Error | null, resp: Buffer) => void) => void): this;
+        on(event: "resumeSession", listener: (sessionId: Buffer, callback: (err: Error, sessionData: Buffer) => void) => void): this;
+        on(event: "secureConnection", listener: (tlsSocket: TLSSocket) => void): this;
+        on(event: "keylog", listener: (line: Buffer, tlsSocket: TLSSocket) => void): this;
+
+        once(event: string, listener: (...args: any[]) => void): this;
+        once(event: "tlsClientError", listener: (err: Error, tlsSocket: TLSSocket) => void): this;
+        once(event: "newSession", listener: (sessionId: Buffer, sessionData: Buffer, callback: (err: Error, resp: Buffer) => void) => void): this;
+        once(event: "OCSPRequest", listener: (certificate: Buffer, issuer: Buffer, callback: (err: Error | null, resp: Buffer) => void) => void): this;
+        once(event: "resumeSession", listener: (sessionId: Buffer, callback: (err: Error, sessionData: Buffer) => void) => void): this;
+        once(event: "secureConnection", listener: (tlsSocket: TLSSocket) => void): this;
+        once(event: "keylog", listener: (line: Buffer, tlsSocket: TLSSocket) => void): this;
+
+        prependListener(event: string, listener: (...args: any[]) => void): this;
+        prependListener(event: "tlsClientError", listener: (err: Error, tlsSocket: TLSSocket) => void): this;
+        prependListener(event: "newSession", listener: (sessionId: Buffer, sessionData: Buffer, callback: (err: Error, resp: Buffer) => void) => void): this;
+        prependListener(event: "OCSPRequest", listener: (certificate: Buffer, issuer: Buffer, callback: (err: Error | null, resp: Buffer) => void) => void): this;
+        prependListener(event: "resumeSession", listener: (sessionId: Buffer, callback: (err: Error, sessionData: Buffer) => void) => void): this;
+        prependListener(event: "secureConnection", listener: (tlsSocket: TLSSocket) => void): this;
+        prependListener(event: "keylog", listener: (line: Buffer, tlsSocket: TLSSocket) => void): this;
+
+        prependOnceListener(event: string, listener: (...args: any[]) => void): this;
+        prependOnceListener(event: "tlsClientError", listener: (err: Error, tlsSocket: TLSSocket) => void): this;
+        prependOnceListener(event: "newSession", listener: (sessionId: Buffer, sessionData: Buffer, callback: (err: Error, resp: Buffer) => void) => void): this;
+        prependOnceListener(event: "OCSPRequest", listener: (certificate: Buffer, issuer: Buffer, callback: (err: Error | null, resp: Buffer) => void) => void): this;
+        prependOnceListener(event: "resumeSession", listener: (sessionId: Buffer, callback: (err: Error, sessionData: Buffer) => void) => void): this;
+        prependOnceListener(event: "secureConnection", listener: (tlsSocket: TLSSocket) => void): this;
+        prependOnceListener(event: "keylog", listener: (line: Buffer, tlsSocket: TLSSocket) => void): this;
+    }
+
+    interface SecurePair {
+        encrypted: TLSSocket;
+        cleartext: TLSSocket;
+    }
+
+    type SecureVersion = 'TLSv1.3' | 'TLSv1.2' | 'TLSv1.1' | 'TLSv1';
+
+    interface SecureContextOptions {
+        /**
+         * Optionally override the trusted CA certificates. Default is to trust
+         * the well-known CAs curated by Mozilla. Mozilla's CAs are completely
+         * replaced when CAs are explicitly specified using this option.
+         */
+        ca?: string | Buffer | Array<string | Buffer>;
+        /**
+         *  Cert chains in PEM format. One cert chain should be provided per
+         *  private key. Each cert chain should consist of the PEM formatted
+         *  certificate for a provided private key, followed by the PEM
+         *  formatted intermediate certificates (if any), in order, and not
+         *  including the root CA (the root CA must be pre-known to the peer,
+         *  see ca). When providing multiple cert chains, they do not have to
+         *  be in the same order as their private keys in key. If the
+         *  intermediate certificates are not provided, the peer will not be
+         *  able to validate the certificate, and the handshake will fail.
+         */
+        cert?: string | Buffer | Array<string | Buffer>;
+        /**
+         *  Colon-separated list of supported signature algorithms. The list
+         *  can contain digest algorithms (SHA256, MD5 etc.), public key
+         *  algorithms (RSA-PSS, ECDSA etc.), combination of both (e.g
+         *  'RSA+SHA384') or TLS v1.3 scheme names (e.g. rsa_pss_pss_sha512).
+         */
+        sigalgs?: string;
+        /**
+         * Cipher suite specification, replacing the default. For more
+         * information, see modifying the default cipher suite. Permitted
+         * ciphers can be obtained via tls.getCiphers(). Cipher names must be
+         * uppercased in order for OpenSSL to accept them.
+         */
+        ciphers?: string;
+        /**
+         * Name of an OpenSSL engine which can provide the client certificate.
+         */
+        clientCertEngine?: string;
+        /**
+         * PEM formatted CRLs (Certificate Revocation Lists).
+         */
+        crl?: string | Buffer | Array<string | Buffer>;
+        /**
+         * Diffie Hellman parameters, required for Perfect Forward Secrecy. Use
+         * openssl dhparam to create the parameters. The key length must be
+         * greater than or equal to 1024 bits or else an error will be thrown.
+         * Although 1024 bits is permissible, use 2048 bits or larger for
+         * stronger security. If omitted or invalid, the parameters are
+         * silently discarded and DHE ciphers will not be available.
+         */
+        dhparam?: string | Buffer;
+        /**
+         * A string describing a named curve or a colon separated list of curve
+         * NIDs or names, for example P-521:P-384:P-256, to use for ECDH key
+         * agreement. Set to auto to select the curve automatically. Use
+         * crypto.getCurves() to obtain a list of available curve names. On
+         * recent releases, openssl ecparam -list_curves will also display the
+         * name and description of each available elliptic curve. Default:
+         * tls.DEFAULT_ECDH_CURVE.
+         */
+        ecdhCurve?: string;
+        /**
+         * Attempt to use the server's cipher suite preferences instead of the
+         * client's. When true, causes SSL_OP_CIPHER_SERVER_PREFERENCE to be
+         * set in secureOptions
+         */
+        honorCipherOrder?: boolean;
+        /**
+         * Private keys in PEM format. PEM allows the option of private keys
+         * being encrypted. Encrypted keys will be decrypted with
+         * options.passphrase. Multiple keys using different algorithms can be
+         * provided either as an array of unencrypted key strings or buffers,
+         * or an array of objects in the form {pem: <string|buffer>[,
+         * passphrase: <string>]}. The object form can only occur in an array.
+         * object.passphrase is optional. Encrypted keys will be decrypted with
+         * object.passphrase if provided, or options.passphrase if it is not.
+         */
+        key?: string | Buffer | Array<Buffer | KeyObject>;
+        /**
+         * Name of an OpenSSL engine to get private key from. Should be used
+         * together with privateKeyIdentifier.
+         */
+        privateKeyEngine?: string;
+        /**
+         * Identifier of a private key managed by an OpenSSL engine. Should be
+         * used together with privateKeyEngine. Should not be set together with
+         * key, because both options define a private key in different ways.
+         */
+        privateKeyIdentifier?: string;
+        /**
+         * Optionally set the maximum TLS version to allow. One
+         * of `'TLSv1.3'`, `'TLSv1.2'`, `'TLSv1.1'`, or `'TLSv1'`. Cannot be specified along with the
+         * `secureProtocol` option, use one or the other.
+         * **Default:** `'TLSv1.3'`, unless changed using CLI options. Using
+         * `--tls-max-v1.2` sets the default to `'TLSv1.2'`. Using `--tls-max-v1.3` sets the default to
+         * `'TLSv1.3'`. If multiple of the options are provided, the highest maximum is used.
+         */
+        maxVersion?: SecureVersion;
+        /**
+         * Optionally set the minimum TLS version to allow. One
+         * of `'TLSv1.3'`, `'TLSv1.2'`, `'TLSv1.1'`, or `'TLSv1'`. Cannot be specified along with the
+         * `secureProtocol` option, use one or the other.  It is not recommended to use
+         * less than TLSv1.2, but it may be required for interoperability.
+         * **Default:** `'TLSv1.2'`, unless changed using CLI options. Using
+         * `--tls-v1.0` sets the default to `'TLSv1'`. Using `--tls-v1.1` sets the default to
+         * `'TLSv1.1'`. Using `--tls-min-v1.3` sets the default to
+         * 'TLSv1.3'. If multiple of the options are provided, the lowest minimum is used.
+         */
+        minVersion?: SecureVersion;
+        /**
+         * Shared passphrase used for a single private key and/or a PFX.
+         */
+        passphrase?: string;
+        /**
+         * PFX or PKCS12 encoded private key and certificate chain. pfx is an
+         * alternative to providing key and cert individually. PFX is usually
+         * encrypted, if it is, passphrase will be used to decrypt it. Multiple
+         * PFX can be provided either as an array of unencrypted PFX buffers,
+         * or an array of objects in the form {buf: <string|buffer>[,
+         * passphrase: <string>]}. The object form can only occur in an array.
+         * object.passphrase is optional. Encrypted PFX will be decrypted with
+         * object.passphrase if provided, or options.passphrase if it is not.
+         */
+        pfx?: string | Buffer | Array<string | Buffer | PxfObject>;
+        /**
+         * Optionally affect the OpenSSL protocol behavior, which is not
+         * usually necessary. This should be used carefully if at all! Value is
+         * a numeric bitmask of the SSL_OP_* options from OpenSSL Options
+         */
+        secureOptions?: number; // Value is a numeric bitmask of the `SSL_OP_*` options
+        /**
+         * Legacy mechanism to select the TLS protocol version to use, it does
+         * not support independent control of the minimum and maximum version,
+         * and does not support limiting the protocol to TLSv1.3. Use
+         * minVersion and maxVersion instead. The possible values are listed as
+         * SSL_METHODS, use the function names as strings. For example, use
+         * 'TLSv1_1_method' to force TLS version 1.1, or 'TLS_method' to allow
+         * any TLS protocol version up to TLSv1.3. It is not recommended to use
+         * TLS versions less than 1.2, but it may be required for
+         * interoperability. Default: none, see minVersion.
+         */
+        secureProtocol?: string;
+        /**
+         * Opaque identifier used by servers to ensure session state is not
+         * shared between applications. Unused by clients.
+         */
+        sessionIdContext?: string;
+    }
+
+    interface SecureContext {
+        context: any;
+    }
+
+    /*
+     * Verifies the certificate `cert` is issued to host `host`.
+     * @host The hostname to verify the certificate against
+     * @cert PeerCertificate representing the peer's certificate
+     *
+     * Returns Error object, populating it with the reason, host and cert on failure.  On success, returns undefined.
+     */
+    function checkServerIdentity(host: string, cert: PeerCertificate): Error | undefined;
+    function createServer(secureConnectionListener?: (socket: TLSSocket) => void): Server;
+    function createServer(options: TlsOptions, secureConnectionListener?: (socket: TLSSocket) => void): Server;
+    function connect(options: ConnectionOptions, secureConnectListener?: () => void): TLSSocket;
+    function connect(port: number, host?: string, options?: ConnectionOptions, secureConnectListener?: () => void): TLSSocket;
+    function connect(port: number, options?: ConnectionOptions, secureConnectListener?: () => void): TLSSocket;
+    /**
+     * @deprecated
+     */
+    function createSecurePair(credentials?: SecureContext, isServer?: boolean, requestCert?: boolean, rejectUnauthorized?: boolean): SecurePair;
+    function createSecureContext(details: SecureContextOptions): SecureContext;
+    function getCiphers(): string[];
+
+    /**
+     * The default curve name to use for ECDH key agreement in a tls server.
+     * The default value is 'auto'. See tls.createSecureContext() for further
+     * information.
+     */
+    let DEFAULT_ECDH_CURVE: string;
+    /**
+     * The default value of the maxVersion option of
+     * tls.createSecureContext(). It can be assigned any of the supported TLS
+     * protocol versions, 'TLSv1.3', 'TLSv1.2', 'TLSv1.1', or 'TLSv1'. Default:
+     * 'TLSv1.3', unless changed using CLI options. Using --tls-max-v1.2 sets
+     * the default to 'TLSv1.2'. Using --tls-max-v1.3 sets the default to
+     * 'TLSv1.3'. If multiple of the options are provided, the highest maximum
+     * is used.
+     */
+    let DEFAULT_MAX_VERSION: SecureVersion;
+    /**
+     * The default value of the minVersion option of tls.createSecureContext().
+     * It can be assigned any of the supported TLS protocol versions,
+     * 'TLSv1.3', 'TLSv1.2', 'TLSv1.1', or 'TLSv1'. Default: 'TLSv1.2', unless
+     * changed using CLI options. Using --tls-min-v1.0 sets the default to
+     * 'TLSv1'. Using --tls-min-v1.1 sets the default to 'TLSv1.1'. Using
+     * --tls-min-v1.3 sets the default to 'TLSv1.3'. If multiple of the options
+     * are provided, the lowest minimum is used.
+     */
+    let DEFAULT_MIN_VERSION: SecureVersion;
+
+    /**
+     * An immutable array of strings representing the root certificates (in PEM
+     * format) used for verifying peer certificates. This is the default value
+     * of the ca option to tls.createSecureContext().
+     */
+    const rootCertificates: ReadonlyArray<string>;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    import { Component, Element, Event, Host, Listen, Prop, Watch, h } from '@stencil/core';
+import { getIonMode } from '../../global/ionic-global';
+export class RadioGroup {
+    constructor() {
+        this.inputId = `ion-rg-${radioGroupIds++}`;
+        this.labelId = `${this.inputId}-lbl`;
+        /**
+         * If `true`, the radios can be deselected.
+         */
+        this.allowEmptySelection = false;
+        /**
+         * The name of the control, which is submitted with the form data.
+         */
+        this.name = this.inputId;
+        this.setRadioTabindex = (value) => {
+            const radios = this.getRadios();
+            // Get the first radio that is not disabled and the checked one
+            const first = radios.find(radio => !radio.disabled);
+            const checked = radios.find(radio => (radio.value === value && !radio.disabled));
+            if (!first && !checked) {
+                return;
+            }
+            // If an enabled checked radio exists, set it to be the focusable radio
+            // otherwise we default to focus the first radio
+            const focusable = checked || first;
+            for (const radio of radios) {
+                const tabindex = radio === focusable ? 0 : -1;
+                radio.setButtonTabindex(tabindex);
+            }
+        };
+        this.onClick = (ev) => {
+            const selectedRadio = ev.target && ev.target.closest('ion-radio');
+            if (selectedRadio) {
+                const currentValue = this.value;
+                const newValue = selectedRadio.value;
+                if (newValue !== currentValue) {
+                    this.value = newValue;
+                }
+                else if (this.allowEmptySelection) {
+                    this.value = undefined;
+                }
+            }
+        };
+    }
+    valueChanged(value) {
+        this.setRadioTabindex(value);
+        this.ionChange.emit({ value });
+    }
+    componentDidLoad() {
+        this.setRadioTabindex(this.value);
+    }
+    async connectedCallback() {
+        // Get the list header if it exists and set the id
+        // this is used to set aria-labelledby
+        const el = this.el;
+        const header = el.querySelector('ion-list-header') || el.querySelector('ion-item-divider');
+        if (header) {
+            const label = header.querySelector('ion-label');
+            if (label) {
+                this.labelId = label.id = this.name + '-lbl';
+            }
+        }
+    }
+    getRadios() {
+        return Array.from(this.el.querySelectorAll('ion-radio'));
+    }
+    onKeydown(ev) {
+        const inSelectPopover = !!this.el.closest('ion-select-popover');
+        if (ev.target && !this.el.contains(ev.target)) {
+            return;
+        }
+        // Get all radios inside of the radio group and then
+        // filter out disabled radios since we need to skip those
+        const radios = Array.from(this.el.querySelectorAll('ion-radio')).filter(radio => !radio.disabled);
+        // Only move the radio if the current focus is in the radio group
+        if (ev.target && radios.includes(ev.target)) {
+            const index = radios.findIndex(radio => radio === ev.target);
+            let next;
+            // If hitting arrow down or arrow right, move to the next radio
+            // If we're on the last radio, move to the first radio
+            if (['ArrowDown', 'ArrowRight'].includes(ev.key)) {
+                next = (index === radios.length - 1)
+                    ? radios[0]
+                    : radios[index + 1];
+            }
+            // If hitting arrow up or arrow left, move to the previous radio
+            // If we're on the first radio, move to the last radio
+            if (['ArrowUp', 'ArrowLeft'].includes(ev.key)) {
+                next = (index === 0)
+                    ? radios[radios.length - 1]
+                    : radios[index - 1];
+            }
+            if (next && radios.includes(next)) {
+                next.setFocus();
+                if (!inSelectPopover) {
+                    this.value = next.value;
+                }
+            }
+        }
+    }
+    render() {
+        return (h(Host, { role: "radiogroup", "aria-labelledby": this.labelId, onClick: this.onClick, class: getIonMode(this) }));
+    }
+    static get is() { return "ion-radio-group"; }
+    static get properties() { return {
+        "allowEmptySelection": {
+            "type": "boolean",
+            "mutable": false,
+            "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+            },
+            "required": false,
+            "optional": false,
+            "docs": {
+                "tags": [],
+                "text": "If `true`, the radios can be deselected."
+            },
+            "attribute": "allow-empty-selection",
+            "reflect": false,
+            "defaultValue": "false"
+        },
+        "name": {
+            "type": "string",
+            "mutable": false,
+            "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+            },
+            "required": false,
+            "optional": false,
+            "docs": {
+                "tags": [],
+                "text": "The name of the control, which is submitted with the form data."
+            },
+            "attribute": "name",
+            "reflect": false,
+            "defaultValue": "this.inputId"
+        },
+        "value": {
+            "type": "any",
+            "mutable": true,
+            "complexType": {
+                "original": "any | null",
+                "resolved": "any",
+                "references": {}
+            },
+            "required": false,
+            "optional": true,
+            "docs": {
+                "tags": [],
+                "text": "the value of the radio group."
+            },
+            "attribute": "value",
+            "reflect": false
+        }
+    }; }
+    static get events() { return [{
+            "method": "ionChange",
+            "name": "ionChange",
+            "bubbles": true,
+            "cancelable": true,
+            "composed": true,
+            "docs": {
+                "tags": [],
+                "text": "Emitted when the value has changed."
+            },
+            "complexType": {
+                "original": "RadioGroupChangeEventDetail",
+                "resolved": "RadioGroupChangeEventDetail",
+                "references": {
+                    "RadioGroupChangeEventDetail": {
+                        "location": "import",
+                        "path": "../../interface"
+                    }
+                }
+            }
+        }]; }
+    static get elementRef() { return "el"; }
+    static get watchers() { re

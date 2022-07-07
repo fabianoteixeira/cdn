@@ -1,0 +1,39 @@
+in a
+     * JavaScript file, gets the return type annotation from JSDoc.
+     */
+    function getEffectiveReturnTypeNode(node) {
+        return ts.isJSDocSignature(node) ?
+            node.type && node.type.typeExpression && node.type.typeExpression.type :
+            node.type || (isInJSFile(node) ? ts.getJSDocReturnType(node) : undefined);
+    }
+    ts.getEffectiveReturnTypeNode = getEffectiveReturnTypeNode;
+    function getJSDocTypeParameterDeclarations(node) {
+        return ts.flatMap(ts.getJSDocTags(node), function (tag) { return isNonTypeAliasTemplate(tag) ? tag.typeParameters : undefined; });
+    }
+    ts.getJSDocTypeParameterDeclarations = getJSDocTypeParameterDeclarations;
+    /** template tags are only available when a typedef isn't already using them */
+    function isNonTypeAliasTemplate(tag) {
+        return ts.isJSDocTemplateTag(tag) && !(tag.parent.kind === 303 /* JSDocComment */ && tag.parent.tags.some(isJSDocTypeAlias));
+    }
+    /**
+     * Gets the effective type annotation of the value parameter of a set accessor. If the node
+     * was parsed in a JavaScript file, gets the type annotation from JSDoc.
+     */
+    function getEffectiveSetAccessorTypeAnnotationNode(node) {
+        var parameter = getSetAccessorValueParameter(node);
+        return parameter && getEffectiveTypeAnnotationNode(parameter);
+    }
+    ts.getEffectiveSetAccessorTypeAnnotationNode = getEffectiveSetAccessorTypeAnnotationNode;
+    function emitNewLineBeforeLeadingComments(lineMap, writer, node, leadingComments) {
+        emitNewLineBeforeLeadingCommentsOfPosition(lineMap, writer, node.pos, leadingComments);
+    }
+    ts.emitNewLineBeforeLeadingComments = emitNewLineBeforeLeadingComments;
+    function emitNewLineBeforeLeadingCommentsOfPosition(lineMap, writer, pos, leadingComments) {
+        // If the leading comments start on different line than the start of node, write new line
+        if (leadingComments && leadingComments.length && pos !== leadingComments[0].pos &&
+            getLineOfLocalPositionFromLineMap(lineMap, pos) !== getLineOfLocalPositionFromLineMap(lineMap, leadingComments[0].pos)) {
+            writer.writeLine();
+        }
+    }
+    ts.emitNewLineBeforeLeadingCommentsOfPosition = emitNewLineBeforeLeadingCommentsOfPosition;
+    function emitNewLine

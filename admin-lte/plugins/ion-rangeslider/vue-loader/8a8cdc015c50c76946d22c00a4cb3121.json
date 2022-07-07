@@ -1,0 +1,42 @@
+ive(version, alternative))
+                return true;
+        }
+        return false;
+    }
+    function testAlternative(version, comparators) {
+        for (var _i = 0, comparators_1 = comparators; _i < comparators_1.length; _i++) {
+            var comparator = comparators_1[_i];
+            if (!testComparator(version, comparator.operator, comparator.operand))
+                return false;
+        }
+        return true;
+    }
+    function testComparator(version, operator, operand) {
+        var cmp = version.compareTo(operand);
+        switch (operator) {
+            case "<": return cmp < 0;
+            case "<=": return cmp <= 0;
+            case ">": return cmp > 0;
+            case ">=": return cmp >= 0;
+            case "=": return cmp === 0;
+            default: return ts.Debug.assertNever(operator);
+        }
+    }
+    function formatDisjunction(alternatives) {
+        return ts.map(alternatives, formatAlternative).join(" || ") || "*";
+    }
+    function formatAlternative(comparators) {
+        return ts.map(comparators, formatComparator).join(" ");
+    }
+    function formatComparator(comparator) {
+        return "" + comparator.operator + comparator.operand;
+    }
+})(ts || (ts = {}));
+var ts;
+(function (ts) {
+    // token > SyntaxKind.Identifier => token is a keyword
+    // Also, If you add a new SyntaxKind be sure to keep the `Markers` section at the bottom in sync
+    var SyntaxKind;
+    (function (SyntaxKind) {
+        SyntaxKind[SyntaxKind["Unknown"] = 0] = "Unknown";
+        SyntaxKind[SyntaxKind["EndOfFileToken"] = 1]

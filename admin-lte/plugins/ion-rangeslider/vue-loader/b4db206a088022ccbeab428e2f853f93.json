@@ -1,0 +1,41 @@
+       currentFlow = finishFlowLabel(falseLabel);
+            bind(node.colonToken);
+            bind(node.whenFalse);
+            addAntecedent(postExpressionLabel, currentFlow);
+            currentFlow = finishFlowLabel(postExpressionLabel);
+        }
+        function bindInitializedVariableFlow(node) {
+            var name = !ts.isOmittedExpression(node) ? node.name : undefined;
+            if (ts.isBindingPattern(name)) {
+                for (var _i = 0, _a = name.elements; _i < _a.length; _i++) {
+                    var child = _a[_i];
+                    bindInitializedVariableFlow(child);
+                }
+            }
+            else {
+                currentFlow = createFlowMutation(16 /* Assignment */, currentFlow, node);
+            }
+        }
+        function bindVariableDeclarationFlow(node) {
+            bindEachChild(node);
+            if (node.initializer || ts.isForInOrOfStatement(node.parent.parent)) {
+                bindInitializedVariableFlow(node);
+            }
+        }
+        function bindJSDocTypeAlias(node) {
+            node.tagName.parent = node;
+            if (node.kind !== 316 /* JSDocEnumTag */ && node.fullName) {
+                setParentPointers(node, node.fullName);
+            }
+        }
+        function bindJSDocClassTag(node) {
+            bindEachChild(node);
+            var host = ts.getHostSignatureFromJSDoc(node);
+            if (host && host.kind !== 161 /* MethodDeclaration */) {
+                addDeclarationToSymbol(host.symbol, host, 32 /* Class */);
+            }
+        }
+        function bindOptionalExpression(node, trueTarget, falseTarget) {
+            doWithConditionalBranches(bind, node, trueTarget, falseTarget);
+            if (!ts.isOptionalChain(node) || ts.isOutermostOptionalChain(node)) {
+                addAntecedent(trueTarget, createFlowCo

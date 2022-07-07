@@ -1,0 +1,13 @@
+5_ES2016_ES2017_ES2018_ES2019_ES2020_or_ESNEXT: diag(6015, ts.DiagnosticCategory.Message, "Specify_ECMAScript_target_version_Colon_ES3_default_ES5_ES2015_ES2016_ES2017_ES2018_ES2019_ES2020_or_6015", "Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'."),
+        Specify_module_code_generation_Colon_none_commonjs_amd_system_umd_es2015_es2020_or_ESNext: diag(6016, ts.DiagnosticCategory.Message, "Specify_module_code_generation_Colon_none_commonjs_amd_system_umd_es2015_es2020_or_ESNext_6016", "Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'."),
+        Print_this_message: diag(6017, ts.DiagnosticCategory.Message, "Print_this_message_6017", "Print this message."),
+        Print_the_compiler_s_version: diag(6019, ts.DiagnosticCategory.Message, "Print_the_compiler_s_version_6019", "Print the compiler's version."),
+        Compile_the_project_given_the_path_to_its_configuration_file_or_to_a_folder_with_a_tsconfig_json: diag(6020, ts.DiagnosticCategory.Message, "Compile_the_project_given_the_path_to_its_configuration_file_or_to_a_folder_with_a_tsconfig_json_6020", "Compile the project given the path to its configuration file, or to a folder with a 'tsconfig.json'."),
+        Syntax_Colon_0: diag(6023, ts.DiagnosticCategory.Message, "Syntax_Colon_0_6023", "Syntax: {0}"),
+        options: diag(6024, ts.DiagnosticCategory.Message, "options_6024", "options"),
+        file: diag(6025, ts.DiagnosticCategory.Message, "file_6025", "file"),
+        Examples_Colon_0: diag(6026, ts.DiagnosticCategory.Message, "Examples_Colon_0_6026", "Examples: {0}"),
+        Options_Colon: diag(6027, ts.DiagnosticCategory.Message, "Options_Colon_6027", "Options:"),
+        Version_0: diag(6029, ts.DiagnosticCategory.Message, "Version_0_6029", "Version {0}"),
+        Insert_command_line_options_and_files_from_a_file: diag(6030, ts.DiagnosticCategory.Message, "Insert_command_line_options_and_files_from_a_file_6030", "Insert command line options and files from a file."),
+        Starting_compilation_in_watch_mode: diag(6031, ts.DiagnosticCategory.Message, "Star

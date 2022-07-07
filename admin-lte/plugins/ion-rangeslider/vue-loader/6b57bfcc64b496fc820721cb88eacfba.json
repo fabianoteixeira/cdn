@@ -1,0 +1,65 @@
+if (!jsdocTypeLiteral) {
+                                jsdocTypeLiteral = createNode(304 /* JSDocTypeLiteral */, start);
+                            }
+                            if (child.kind === 320 /* JSDocTypeTag */) {
+                                if (childTypeTag) {
+                                    break;
+                                }
+                                else {
+                                    childTypeTag = child;
+                                }
+                            }
+                            else {
+                                jsdocTypeLiteral.jsDocPropertyTags = ts.append(jsdocTypeLiteral.jsDocPropertyTags, child);
+                            }
+                        }
+                        if (jsdocTypeLiteral) {
+                            if (typeExpression && typeExpression.type.kind === 174 /* ArrayType */) {
+                                jsdocTypeLiteral.isArrayType = true;
+                            }
+                            typedefTag.typeExpression = childTypeTag && childTypeTag.typeExpression && !isObjectOrObjectArrayTypeReference(childTypeTag.typeExpression.type) ?
+                                childTypeTag.typeExpression :
+                                finishNode(jsdocTypeLiteral);
+                            end = typedefTag.typeExpression.end;
+                        }
+                    }
+                    // Only include the characters between the name end and the next token if a comment was actually parsed out - otherwise it's just whitespace
+                    return finishNode(typedefTag, end || typedefTag.comment !== undefined ? scanner.getStartPos() : (typedefTag.fullName || typedefTag.typeExpression || typedefTag.tagName).end);
+                }
+                function parseJSDocTypeNameWithNamespace(nested) {
+                    var pos = scanner.getTokenPos();
+                    if (!ts.tokenIsIdentifierOrKeyword(token())) {
+                        return undefined;
+                    }
+                    var typeNameOrNamespaceName = parseJSDocIdentifierName();
+                    if (parseOptional(24 /* DotToken */)) {
+                        var jsDocNamespaceNode = createNode(249 /* ModuleDeclaration */, pos);
+                        if (nested) {
+                            jsDocNamespaceNode.flags |= 4 /* NestedNamespace */;
+                        }
+                        jsDocNamespaceNode.name = typeNameOrNamespaceName;
+                        jsDocNamespaceNode.body = parseJSDocTypeNameWithNamespace(/*nested*/ true);
+                        return finishNode(jsDocNamespaceNode);
+                    }
+                    if (nested) {
+                        typeNameOrNamespaceName.isInJSDocNamespace = true;
+                    }
+                    return typeNameOrNamespaceName;
+                }
+                function parseCallbackTag(start, tagName, indent) {
+                    var callbackTag = createNode(315 /* JSDocCallbackTag */, start);
+                    callbackTag.tagName = tagName;
+                    callbackTag.fullName = parseJSDocTypeNameWithNamespace();
+                    callbackTag.name = getJSDocTypeAliasName(callbackTag.fullName);
+                    skipWhitespace();
+                    callbackTag.comment = parseTagComments(indent);
+                    var child;
+                    var jsdocSignature = createNode(305 /* JSDocSignature */, start);
+                    jsdocSignature.parameters = [];
+                    while (child = tryParse(function () { return parseChildParameterOrPropertyTag(4 /* CallbackParameter */, indent); })) {
+                        jsdocSignature.parameters = ts.append(jsdocSignature.parameters, child);
+                    }
+                    var returnTag = tryParse(function () {
+                        if (parseOptionalJsdoc(59 /* AtToken */)) {
+                            var tag = parseTag(indent);
+                            if (tag && tag.kind === 318 /

@@ -1,0 +1,31 @@
+fier or the 'get' or 'set' keywords.
+            if (isLiteralPropertyName()) {
+                idToken = token();
+                nextToken();
+            }
+            // Index signatures and computed properties are class members; we can parse.
+            if (token() === 22 /* OpenBracketToken */) {
+                return true;
+            }
+            // If we were able to get any potential identifier...
+            if (idToken !== undefined) {
+                // If we have a non-keyword identifier, or if we have an accessor, then it's safe to parse.
+                if (!ts.isKeyword(idToken) || idToken === 142 /* SetKeyword */ || idToken === 131 /* GetKeyword */) {
+                    return true;
+                }
+                // If it *is* a keyword, but not an accessor, check a little farther along
+                // to see if it should actually be parsed as a class member.
+                switch (token()) {
+                    case 20 /* OpenParenToken */: // Method declaration
+                    case 29 /* LessThanToken */: // Generic Method declaration
+                    case 53 /* ExclamationToken */: // Non-null assertion on property name
+                    case 58 /* ColonToken */: // Type Annotation for declaration
+                    case 62 /* EqualsToken */: // Initializer for declaration
+                    case 57 /* QuestionToken */: // Not valid, but permitted so that it gets caught later on.
+                        return true;
+                    default:
+                        // Covers
+                        //  - Semicolons     (declaration termination)
+                        //  - Closing braces (end-of-class, must be declaration)
+                        //  - End-of-files   (not valid, but permitted so that it gets caught later on)
+                        //  - Line-breaks    (enabling *
